@@ -1,0 +1,3130 @@
+<<<<<<< HEAD
+<!DOCTYPE>
+<html>
+    
+<script>
+    
+function save() {
+    localStorage.setItem("gold", gold);
+    localStorage.setItem("questsCompleted", questsCompleted);
+    localStorage.setItem("goldperkill", goldPS);
+    localStorage.setItem("stage", stage);
+    localStorage.setItem("talentpointsOnPrestige", talentpointsOnPrestige);
+    localStorage.setItem("talentpoints", talentpoints);
+    localStorage.setItem("invaderLevel", invaderLevel);
+    localStorage.setItem("invaderCost", invaderCost);
+    localStorage.setItem("raiderLevel", raiderLevel);
+    localStorage.setItem("raiderCost", raiderCost);
+    localStorage.setItem("squireLevel", squireLevel);
+    localStorage.setItem("squireCost", squireCost);
+    localStorage.setItem("footmanLevel", footmanLevel);
+    localStorage.setItem("footmanCost", footmanCost);
+    localStorage.setItem("knightLevel", knightLevel);
+    localStorage.setItem("knightCost", knightCost);
+    localStorage.setItem("strengthLevel", strengthLevel);
+    localStorage.setItem("constitutionLevel", conLevel);
+    localStorage.setItem("defenseLevel", defLevel);
+    localStorage.setItem("dexterityLevel", dexLevel);
+    localStorage.setItem("intelligenceLevel", intLevel);
+    localStorage.setItem("charismaLevel", chaLevel);
+    localStorage.setItem("wisdomLevel", wisLevel);
+    localStorage.setItem("willpowerLevel", wilLevel);
+    localStorage.setItem("perceptionLevel", perLevel);
+    localStorage.setItem("luckLevel", lucLevel);
+    localStorage.setItem("attackspeedLevel", attackspeedLevel);
+    localStorage.setItem("hpLevel", hpLevel);
+    localStorage.setItem("mpLevel", mpLevel);
+    localStorage.setItem("goldFromInventory", goldFromInventory);
+    localStorage.setItem("level", level);
+    localStorage.setItem("act", act);
+    localStorage.setItem("weaponLevel", weaponLevel);
+    localStorage.setItem("armorLevel", armorLevel);
+    localStorage.setItem("manavaultLevel", manavaultLevel);
+    localStorage.setItem("healthvaultLevel", healthvaultLevel);
+    localStorage.setItem("attackspeedthingyLevel", attackspeedthingyLevel);
+    localStorage.setItem("frostboltLevel", frostboltLevel);
+    localStorage.setItem("fireblastLevel", fireblastLevel);
+    localStorage.setItem("smiteLevel", smiteLevel);
+    localStorage.setItem("mindcontrolLevel", mindcontrolLevel);
+    localStorage.setItem("lightningboltLevel", lightningboltLevel);
+    localStorage.setItem("earthquakeLevel", earthquakeLevel);
+    localStorage.setItem("forceblastLevel", forceblastLevel);
+    localStorage.setItem("acidsplashLevel", acidsplashLevel);
+    localStorage.setItem("magicmissileLevel", magicmissileLevel);
+    localStorage.setItem("spellPoints", spellPoints);
+    
+}
+    
+function load() {
+    gold = localStorage.getItem("gold");
+    gold = parseInt(gold);
+    document.getElementById('gold').value = gold;
+    
+    questsCompleted = localStorage.getItem("questsCompleted");
+    questsCompleted = parseInt(questsCompleted);
+    document.getElementById('questsCompleted').value = questsCompleted;
+    
+    goldPS = localStorage.getItem("goldperkill");
+    goldPS = parseInt(goldPS);
+    document.getElementById('goldPS').value = goldPS;
+    
+    stage = localStorage.getItem("stage");
+    stage = parseInt(stage);
+    document.getElementById('stage').value = stage;
+    
+    talentpointsOnPrestige = localStorage.getItem("talentpointsOnPrestige");
+    talentpointsOnPrestige = parseInt(talentpointsOnPrestige);
+    document.getElementById('talentpointsOnPrestige').value = talentpointsOnPrestige;
+    
+    talentpoints = localStorage.getItem("talentpoints");
+    talentpoints = parseInt(talentpoints);
+    document.getElementById('talentpoints').value = talentpoints;
+    
+    invaderLevel = localStorage.getItem("invaderLevel");
+    invaderLevel = parseInt(invaderLevel);
+    document.getElementById('invaderLevel').value = invaderLevel;
+    
+    invaderCost = localStorage.getItem("invaderCost");
+    invaderCost = parseInt(invaderCost);
+    document.getElementById('invaderCost').value = invaderCost;
+    
+    raiderLevel = localStorage.getItem("raiderLevel");
+    raiderLevel = parseInt(raiderLevel);
+    document.getElementById('raiderLevel').value = raiderLevel;
+    
+    raiderCost = localStorage.getItem("raiderCost");
+    raiderCost = parseInt(raiderCost);
+    document.getElementById('raiderCost').value = raiderCost;
+    
+    squireLevel = localStorage.getItem("squireLevel");
+    squireLevel = parseInt(squireLevel);
+    document.getElementById('squireLevel').value = squireLevel;
+    
+    squireCost = localStorage.getItem("squireCost");
+    squireCost = parseInt(squireCost);
+    document.getElementById('squireCost').value = squireCost;
+    
+    footmanLevel = localStorage.getItem("footmanLevel");
+    footmanLevel = parseInt(footmanLevel);
+    document.getElementById('footmanLevel').value = footmanLevel;
+    
+    footmanCost = localStorage.getItem("footmanCost");
+    footmanCost = parseInt(footmanCost);
+    document.getElementById('footmanCost').value = footmanCost;
+    
+    knightLevel = localStorage.getItem("knightLevel");
+    knightLevel = parseInt(knightLevel);
+    document.getElementById('knightLevel').value = knightLevel;
+    
+    knightCost = localStorage.getItem("knightCost");
+    knightCost = parseInt(knightCost);
+    document.getElementById('knightCost').value = knightCost;
+    
+    strengthLevel = localStorage.getItem("strengthLevel");
+    strengthLevel = parseInt(strengthLevel);
+    document.getElementById('strengthLevel').value = strengthLevel;
+    
+    conLevel = localStorage.getItem("constitutionLevel");
+    conLevel = parseInt(conLevel);
+    document.getElementById('constitutionLevel').value = conLevel;
+    
+    defLevel = localStorage.getItem("defenseLevel");
+    defLevel = parseInt(defLevel);
+    document.getElementById('defenseLevel').value = defLevel;
+    
+    dexLevel = localStorage.getItem("dexterityLevel");
+    dexLevel = parseInt(dexLevel);
+    document.getElementById('dexterityLevel').value = dexLevel;
+    
+    intLevel = localStorage.getItem("intelligenceLevel");
+    intLevel = parseInt(intLevel);
+    document.getElementById('intelligenceLevel').value = intLevel;
+    
+    chaLevel = localStorage.getItem("charismaLevel");
+    chaLevel = parseInt(chaLevel);
+    document.getElementById('charismaLevel').value = chaLevel;
+    
+    wisLevel = localStorage.getItem("wisdomLevel");
+    wisLevel = parseInt(wisLevel);
+    document.getElementById('wisdomLevel').value = wisLevel;
+    
+    wilLevel = localStorage.getItem("willpowerLevel");
+    wilLevel = parseInt(wilLevel);
+    document.getElementById('willpowerLevel').value = wilLevel;
+    
+    perLevel = localStorage.getItem("perceptionLevel");
+    perLevel = parseInt(perLevel);
+    document.getElementById('perceptionLevel').value = perLevel;
+    
+    lucLevel = localStorage.getItem("luckLevel");
+    lucLevel = parseInt(lucLevel);
+    document.getElementById('luckLevel').value = lucLevel;
+    
+    attackspeedLevel = localStorage.getItem("attackspeedLevel");
+    attackspeedLevel = parseInt(attackspeedLevel);
+    document.getElementById('attackspeedLevel').value = attackspeedLevel;
+    
+    hpLevel = localStorage.getItem("hpLevel");
+    hpLevel = parseInt(hpLevel);
+    document.getElementById('hpLevel').value = hpLevel;
+    
+    mpLevel = localStorage.getItem("mpLevel");
+    mpLevel = parseInt(mpLevel);
+    document.getElementById('mpLevel').value = mpLevel;
+    
+    goldFromInventory = localStorage.getItem("goldFromInventory");
+    goldFromInventory = parseInt(goldFromInventory);
+    document.getElementById('goldFromInventory').value = goldFromInventory;
+    
+    level = localStorage.getItem("level");
+    level = parseInt(level);
+    document.getElementById('level').value = level;
+    
+    act = localStorage.getItem("act");
+    act = parseInt(act);
+    document.getElementById('act').value = act;
+    
+    weaponLevel = localStorage.getItem("weaponLevel");
+    weaponLevel = parseInt(weaponLevel);
+    document.getElementById('weaponLevel').value = weaponLevel;
+    
+    armorLevel = localStorage.getItem("armorLevel");
+    armorLevel = parseInt(armorLevel);
+    document.getElementById('armorLevel').value = armorLevel;
+    
+    manavaultLevel = localStorage.getItem("manavaultLevel");
+    manavaultLevel = parseInt(manavaultLevel);
+    document.getElementById('manavaultLevel').value = manavaultLevel;
+    
+    healthvaultLevel = localStorage.getItem("healthvaultLevel");
+    healthvaultLevel = parseInt(healthvaultLevel);
+    document.getElementById('healthvaultLevel').value = healthvaultLevel;
+    
+    attackspeedthingyLevel = localStorage.getItem("attackspeedthingyLevel");
+    attackspeedthingyLevel = parseInt(attackspeedthingyLevel);
+    document.getElementById('attackspeedthingyLevel').value = attackspeedthingyLevel;
+    
+    frostboltLevel = localStorage.getItem("frostboltLevel");
+    frostboltLevel = parseInt(frostboltLevel);
+    document.getElementById('forceblastLevel').value = frostboltLevel;
+    
+    fireblastLevel = localStorage.getItem("fireblastLevel");
+    fireblastLevel = parseInt(fireblastLevel);
+    document.getElementById('fireblastLevel').value = fireblastLevel;
+    
+    smiteLevel = localStorage.getItem("smiteLevel");
+    smiteLevel = parseInt(smiteLevel);
+    document.getElementById('smiteLevel').value = smiteLevel;
+    
+    mindcontrolLevel = localStorage.getItem("mindcontrolLevel");
+    mindcontrolLevel = parseInt(mindcontrolLevel);
+    document.getElementById('mindcontrolLevel').value = mindcontrolLevel;
+    
+    lightningboltLevel = localStorage.getItem("lightningboltLevel");
+    lightningboltLevel = parseInt(lightningboltLevel);
+    document.getElementById('lightningboltLevel').value = lightningboltLevel;
+    
+    earthquakeLevel = localStorage.getItem("earthquakeLevel");
+    earthquakeLevel = parseInt(earthquakeLevel);
+    document.getElementById('earthquakeLevel').value = earthquakeLevel;
+    
+    forceblastLevel = localStorage.getItem("forceblastLevel");
+    forceblastLevel = parseInt(forceblastLevel);
+    document.getElementById('forceblastLevel').value = forceblastLevel;
+    
+    acidsplashLevel = localStorage.getItem("acidsplashLevel");
+    acidsplashLevel = parseInt(acidsplashLevel);
+    document.getElementById('acidsplashLevel').value = acidsplashLevel;
+    
+    magicmissileLevel = localStorage.getItem("magicmissileLevel");
+    magicmissileLevel = parseInt(magicmissileLevel);
+    document.getElementById('magicmissileLevel').value = magicmissileLevel;
+    
+    spellPoints = localStorage.getItem("spellPoints");
+    spellPoints = parseInt(spellPoints);
+    document.getElementById('spellPoints').value = spellPoints;
+    
+    setInterval(function() {
+    localStorage.setItem("gold", gold);
+    localStorage.setItem("questsCompleted", questsCompleted);
+    localStorage.setItem("goldperkill", goldPS);
+    localStorage.setItem("stage", stage);
+    localStorage.setItem("talentpointsOnPrestige", talentpointsOnPrestige);
+    localStorage.setItem("talentpoints", talentpoints);
+    localStorage.setItem("invaderLevel", invaderLevel);
+    localStorage.setItem("invaderCost", invaderCost);
+    localStorage.setItem("raiderLevel", raiderLevel);
+    localStorage.setItem("raiderCost", raiderCost);
+    localStorage.setItem("squireLevel", squireLevel);
+    localStorage.setItem("squireCost", squireCost);
+    localStorage.setItem("footmanLevel", footmanLevel);
+    localStorage.setItem("footmanCost", footmanCost);
+    localStorage.setItem("knightLevel", knightLevel);
+    localStorage.setItem("knightCost", knightCost);
+    localStorage.setItem("strengthLevel", strengthLevel);
+    localStorage.setItem("constitutionLevel", conLevel);
+    localStorage.setItem("defenseLevel", defLevel);
+    localStorage.setItem("dexterityLevel", dexLevel);
+    localStorage.setItem("intelligenceLevel", intLevel);
+    localStorage.setItem("charismaLevel", chaLevel);
+    localStorage.setItem("wisdomLevel", wisLevel);
+    localStorage.setItem("willpowerLevel", wilLevel);
+    localStorage.setItem("perceptionLevel", perLevel);
+    localStorage.setItem("luckLevel", lucLevel);
+    localStorage.setItem("attackspeedLevel", attackspeedLevel);
+    localStorage.setItem("hpLevel", hpLevel);
+    localStorage.setItem("mpLevel", mpLevel);
+    localStorage.setItem("goldFromInventory", goldFromInventory);
+    localStorage.setItem("level", level);
+    localStorage.setItem("act", act);
+    localStorage.setItem("weaponLevel", weaponLevel);
+    localStorage.setItem("armorLevel", armorLevel);
+    localStorage.setItem("manavaultLevel", manavaultLevel);
+    localStorage.setItem("healthvaultLevel", healthvaultLevel);
+    localStorage.setItem("attackspeedthingyLevel", attackspeedthingyLevel);
+    localStorage.setItem("frostboltLevel", frostboltLevel);
+    localStorage.setItem("fireblastLevel", fireblastLevel);
+    localStorage.setItem("smiteLevel", smiteLevel);
+    localStorage.setItem("mindcontrolLevel", mindcontrolLevel);
+    localStorage.setItem("lightningboltLevel", lightningboltLevel);
+    localStorage.setItem("earthquakeLevel", earthquakeLevel);
+    localStorage.setItem("forceblastLevel", forceblastLevel);
+    localStorage.setItem("acidsplashLevel", acidsplashLevel);
+    localStorage.setItem("magicmissileLevel", magicmissileLevel);
+    localStorage.setItem("spellPoints", spellPoints);
+    }, 100)
+    
+}
+    
+</script>
+<head>
+    
+<link rel="icon" type="image/png" href="loadingquesterlogo.png"/>
+    
+<div style="height:75px;width:125px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:175; top:65; ">
+    <button button type="button" onClick="save()" >SAVE</button>
+    <b>=======</b>
+    <button button type="button" onClick="load()" >LOAD</button>
+    </div>
+    
+<div style="height:75px;width:225px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:175; top:150; ">
+    <p>IMPORTANT</p>
+    <p>If this is your first time ever playing
+    you need to do this:
+    Click the save button. Then click the load button.
+    Now the game saves automaticly.
+    Just remember to click load every time you play.</p>
+    </div>
+<div style="height:100px;width:200px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:550; top:20; ">
+<p id="p">Class: <i>please select a class</i></p>
+<button onclick="classPicker();">Change Class</button>
+<script>
+    function classPicker() {
+        var valid_inputs = ["alchemist",
+                            "arcane archer",
+                            "artificer",
+                            "assassin",
+                            "barbarian",
+                            "bard",
+                            "battlemage",
+                            "battlerager",
+                            "bounty hunter",
+                            "cavalier",
+                            "cleric",
+                            "crazy cat lady",
+                            "dragon knight",
+                            "dragon rider",
+                            "dragonslayer",
+                            "druid",
+                            "duelist",
+                            "dog whisperer",
+                            "fighter",
+                            "gladiator",
+                            "illusionist",
+                            "knight",
+                            "monk",
+                            "mage",
+                            "necromancer",
+                            "ninja",
+                            "oracle",
+                            "paladin",
+                            "psion",
+                            "psychic warrior",
+                            "priest",
+                            "ranger",
+                            "rogue",
+                            "scavenger",
+                            "scout",
+                            "shadowdancer",
+                            "shaman",
+                            "shadowmancer",
+                            "sorcerer",
+                            "soulmancer",
+                            "spidermage",
+                            "spider rider",
+                            "summoner",
+                            "swashbuckler",
+                            "thief",
+                            "thug",
+                            "warlock",
+                            "warlord",
+                            "warmage",
+                            "warrior",
+                            "whisperer",
+                            "witchhunter",
+                            "wizard",
+                           
+                           ];
+        var person = prompt(`Please enter one of these classes: ${valid_inputs.map(a => capitalize(a)).join(", ")}`, capitalize(valid_inputs[0]));
+        if (valid_inputs.indexOf(person.toLowerCase()) !== -1) {
+            document.getElementById("p").innerHTML = `Class: ${capitalize(person)}`;
+        } else {
+            alert("Please choose a valid class");
+            classPicker();
+        };
+    };
+    function capitalize(string) {
+        return string.substring(0, 1).toUpperCase() + string.substring(1);
+    };
+</script>
+    </div>
+    
+<div style="height:100px;width:200px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:325; top:20; ">
+<p id="p2">Race: <i>please select a race</i></p>
+<button onclick="racePicker();">Change Race</button>
+<script>
+    function racePicker() {
+        var valid_inputs = ["avian",
+                            "cat man",
+                            "centaur",
+                            "dragonman",
+                            "dwarf",
+                            "draenei",
+                            "elf",
+                            "gnome",
+                            "goblin",
+                            "human",
+                            "kobold",
+                            "lizard man",
+                            "orc",
+                            "pandarian",
+                            "ratling",
+                            "troglodyte",
+                            "worgen",
+                           
+                           ];
+        var person2 = prompt(`Please enter one of these races: ${valid_inputs.map(a => capitalize2(a)).join(", ")}`, capitalize2(valid_inputs[0]));
+        if (valid_inputs.indexOf(person2.toLowerCase()) !== -1) {
+            document.getElementById("p2").innerHTML = `Race: ${capitalize2(person2)}`;
+        } else {
+            alert("Please choose a valid race");
+            racePicker();
+        };
+    };
+    function capitalize2(string) {
+        return string.substring(0, 1).toUpperCase() + string.substring(1);
+    };
+</script>
+    </div> 
+
+<div style="height:35px;width:225px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:75; top:20; ">    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<input type="checkbox" name="skill" value="male"> Male
+<input type="checkbox" name="skill" value="female"> Female
+<input type="checkbox" name="skill" value="other"> Other
+
+<script>
+$(document).ready(function(){
+    $('input:checkbox').click(function() {
+        $('input:checkbox').not(this).prop('checked', false);
+    });
+});
+</script>
+    </div>
+    
+</head>
+    
+<body>    
+    
+<div style="z-index: 10; position: absolute; right:775; top:148; font-size: 50px; color:black;">
+<progress id="progress" value="1" max="100">
+</progress>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1600; top:122; font-size: 30px; color:black;">
+<progress id="questProgress" value="1" max="100">
+</progress>
+    </div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:200; ">
+ <p id="weaponLevel"></p>
+    </div>
+    
+ <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:169; ">Act</div>
+    
+<div style="z-index: 10; position: absolute; right:1810; top:230; font-size: 16px; color:black;">
+    <p id="currentWeapon"></p>
+    </div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:200; ">
+ <p id="act"></p>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1290; top:290; font-size: 30px; color:black;">
+<progress id="actProgress" value="1" max="100">
+</progress>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1415; top:275; font-size: 20px; color:black;">
+<p id="actXp"></p>
+    </div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:375; ">
+ <p id="armorLevel"></p>
+    </div>
+    
+    <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:169; ">Weapon</div>
+    
+    <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:344; ">Armor</div>
+    
+    <div style="z-index: 10; position: absolute; right:1775; top:400; font-size: 16px; color:black;">
+    <p id="currentArmor"></p>
+    </div>
+    
+  <div style="height:127px;width:499px;border:1px solid #ccc;font:25px/10px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:775; top:20; ">
+    <p id="questsCompleted"></p>
+    <p id="goldPS"></p>
+    <p id="gold"></p>
+    </div>
+    
+    <div style="height:100px;width:499px;border:1px solid #ccc;font:20px/10px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:775; top:235; ">
+    <p id="stage"></p>
+    <p id="talentpointsOnPrestige"></p>
+    <p id="talentpoints"></p>
+    </div>
+    
+    <div style="font-size:27px; z-index: 10; position: absolute; right:895; top:180;">
+    <p id="words"></p>
+    </div>
+    
+    <div style="font-size:27px; z-index: 10; position: absolute; right:575; top:310;">
+        <a href="https://discord.gg/PCkcCAJ">Join our Discord!</a>
+    </div>
+    
+    <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:344; ">Inventory
+    <button button type="button" onClick="inventoryReset()">Sell Items</button>
+    </div>
+    
+      <div style="height:100px;width:100px;border:1px solid #ccc;font:20px/20px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1490; top:375; ">
+    <p id="items"></p>
+    </div>
+    
+      <div style="height:100px;width:200px;border:1px solid #ccc;font:15px/20px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:375; ">
+    <p id="goldFromInventory"></p>
+    </div>
+    
+        <div style="height:45px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:975; top:344; ">Hire Adventurers 
+    </div>
+    
+     <div style="height:580px;width:300px;border:1px solid #ccc;font:20px/15px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:975; top:390; ">
+         <button button type="button" onClick="invaderBuy()" >Hire Invader (+1 Gold Per Kill)</button>
+         <p id="invaderCost"></p>
+         <p id="invaderLevel"></p>
+         <p>=================</p>
+         <button button type="button" onClick="raiderBuy()" >Hire Raider (+2 Gold Per Kill)</button>
+         <p id="raiderCost"></p>
+         <p id="raiderLevel"></p>
+         <p>=================</p>
+         <button button type="button" onClick="squireBuy()" >Hire Squire (+5 Gold Per Kill)</button>
+         <p id="squireCost"></p>
+         <p id="squireLevel"></p>
+         <p>=================</p>
+         <button button type="button" onClick="footmanBuy()" >Hire Footman (+10 Gold Per Kill)</button>
+         <p id="footmanCost"></p>
+         <p id="footmanLevel"></p>
+         <p>=================</p>
+         <button button type="button" onClick="knightBuy()" >Hire Knight (+15 Gold Per Kill)</button>
+         <p id="knightCost"></p>
+         <p id="knightLevel"></p>
+         <p>=================</p>
+             
+    </div>
+    
+    <div style="height:45px;width:400px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:555; top:344; ">Talents
+        <button button type="button" onClick="prestige()" >Prestige</button>
+    </div>
+    
+    <div style="height:580px;width:400px;border:1px solid #ccc;font:20px/10px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:555; top:390; ">
+        <button button type="button" onClick="manaUpgrade()" >Mana Vault</button>
+        <p>Cost: 1 Talent Point</p>
+        <p id="manavaultLevel"></p>
+        <p>+5 Max Mana.</p>
+        <p>=================</p>
+        <button button type="button" onClick="healthUpgrade()" >Health Vault</button>
+        <p>Cost: 1 Talent Point</p>
+        <p id="healthvaultLevel"></p>
+        <p>+10 Max Health.</p>
+        <p>=================</p>
+        <button button type="button" onClick="attackspeedUpgrade()" >Attack Speed</button>
+        <p>Cost: 1 Talent Point</p>
+        <p id="attackspeedthingyLevel"></p>
+        <p>+1 Attack Speed.</p>
+        <p>=================</p>
+        
+        
+        
+    </div>
+    
+    <script>
+        
+    setInterval(function renderTalentLevels() {
+        document.getElementById("manavaultLevel").innerHTML = "Level: " + Math.round(manavaultLevel); // Displays Mana Vault Level.
+        document.getElementById("healthvaultLevel").innerHTML = "Level: " + Math.round(healthvaultLevel); // Displays Health Vault Level.
+        document.getElementById("attackspeedthingyLevel").innerHTML = "Level: " + Math.round(attackspeedthingyLevel); // Displays Attack Speed Level.
+    })
+    
+    var manavaultLevel = 0;
+    var healthvaultLevel = 0;
+    var attackspeedthingyLevel = 0;
+    
+    function manaUpgrade() {
+        if(talentpoints >= 1){
+            talentpoints -= 1;
+            manavaultLevel += 1;
+            mpLevel += 5;
+        }
+        else{
+        }
+    }
+        
+    function healthUpgrade() {
+        if(talentpoints >= 1){
+            talentpoints -= 1;
+            healthvaultLevel += 1;
+            hpLevel += 10;
+        }
+        else{
+        }
+    }
+        
+    function attackspeedUpgrade() {
+        if(talentpoints >= 1){
+            talentpoints -= 1;
+            attackspeedthingyLevel += 1;
+            attackspeedLevel += 1;
+        }
+        else{
+        }
+    }
+    
+    
+    </script>
+    
+    
+    
+    <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:19; ">Quest</div>
+
+    <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:19; ">Level</div>
+    
+        <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:504; ">Stats</div>
+    
+    <div style="height:65px;width:300px;border:1px solid #ccc;font:20px/12px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:504; ">Spellbook
+    <p style=" font:15px/15px Georgia, Garamond, Serif; " id="spellPoints"></p>
+    </div>
+    
+    <div style="height:400px;width:300px;border:1px solid #ccc;font:15px/10px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:570; ">
+    <p id="frostboltLevel"></p>
+    <button button type="button" onClick="frostboltLevelUp()">Level Up Frostbolt</button>
+    <p id="fireblastLevel"></p>
+    <button button type="button" onClick="fireblastLevelUp()">Level Up Fireblast</button>
+    <p id="smiteLevel"></p>
+    <button button type="button" onClick="smiteLevelUp()">Level Up Smite</button>
+    <p id="mindcontrolLevel"></p> 
+    <button button type="button" onClick="mindcontrolLevelUp()">Level Up Mind Control</button>
+    <p id="lightningboltLevel"></p>
+    <button button type="button" onClick="lightningboltLevelUp()">Level Up Lightningbolt</button>
+    <p id="earthquakeLevel"></p>
+    <button button type="button" onClick="earthquakeLevelUp()">Level Up Earthquake</button> 
+    <p id="forceblastLevel"></p>
+    <button button type="button" onClick="forceblastLevelUp()">Level Up Forceblast</button>
+    <p id="acidsplashLevel"></p>
+    <button button type="button" onClick="acidsplashLevelUp()">Level Up Acid Splash</button>
+    <p id="magicmissileLevel"></p>
+    <button button type="button" onClick="magicmissileLevelUp()">Level Up Magic Missile</button>
+  <script>
+      
+setInterval(function renderAdventures() {
+    document.getElementById("invaderLevel").innerHTML = "Level: " + Math.round(invaderLevel); // Displays Invader Level.
+    document.getElementById("invaderCost").innerHTML = "Cost: " + Math.round(invaderCost) + " Gold"; // Displays Invader Cost.
+    document.getElementById("raiderLevel").innerHTML = "Level: " + Math.round(raiderLevel); // Displays Raider Level.
+    document.getElementById("raiderCost").innerHTML = "Cost: " + Math.round(raiderCost) + " Gold"; // Displays Raider Cost.
+    document.getElementById("squireLevel").innerHTML = "Level: " + Math.round(squireLevel); // Displays Squire Level.
+    document.getElementById("squireCost").innerHTML = "Cost: " + Math.round(squireCost) + " Gold"; // Displays Squire Cost.
+    document.getElementById("footmanLevel").innerHTML = "Level: " + Math.round(footmanLevel); // Displays Footman Level.
+    document.getElementById("footmanCost").innerHTML = "Cost: " + Math.round(footmanCost) + " Gold"; // Displays Footman Cost.
+    document.getElementById("knightLevel").innerHTML = "Level: " + Math.round(knightLevel); // Displays Knight Level.
+    document.getElementById("knightCost").innerHTML = "Cost: " + Math.round(knightCost) + " Gold"; // Displays Knight Cost.
+})
+ 
+   var invaderLevel = 0;
+   var invaderCost = 100;
+      
+   var raiderLevel = 0;
+   var raiderCost = 250;
+      
+   var squireLevel = 0;
+   var squireCost = 500;
+      
+   var footmanLevel = 0;
+   var footmanCost = 1250;
+      
+   var knightLevel = 0;
+   var knightCost = 1750;      
+      
+      
+   function invaderBuy() {
+       if(gold >= invaderCost){
+           gold -= invaderCost;
+           invaderCost *= 1.30;
+           goldPS += 1;
+           invaderLevel += 1;
+       }
+       else{
+       }
+   }
+      
+    function raiderBuy() {
+        if(gold >= raiderCost){
+            gold -= raiderCost;
+            raiderCost *= 1.30;
+            goldPS += 2;
+            raiderLevel += 1;
+        }
+        else{
+        }
+    }
+
+      
+    function squireBuy() {
+        if(gold >= squireCost){
+            gold -= squireCost;
+            squireCost *= 1.30;
+            goldPS += 5;
+            squireLevel += 1;
+        }
+        else{
+        }
+    } 
+    
+    function footmanBuy() {
+        if(gold >= footmanCost){
+            gold -= footmanCost;
+            footmanCost *= 1.30;
+            goldPS += 10;
+            footmanLevel += 1;
+        }
+        else{
+        }
+    }
+      
+    function knightBuy() {
+        if(gold >= knightCost){
+            gold -= knightCost;
+            knightCost *= 1.30;
+            goldPS += 15;
+            knightLevel += 1;
+        }
+        else{
+        }
+    }
+      
+      
+      
+        </script>        
+
+
+<script>
+           
+var goldPS = 0;
+
+setInterval(function renderGoldPerSec() {
+    document.getElementById("goldPS").innerHTML = "Bonus Gold Per Kill: " + Math.round(goldPS); // Displays Gold Per Kill.
+})
+      
+        
+</script>   
+        
+        
+        
+    </div>
+<script>
+    
+var frostboltLevel = 1;
+var fireblastLevel = 1;
+var smiteLevel = 1;
+var mindcontrolLevel = 1;
+var lightningboltLevel = 1;
+var earthquakeLevel = 1;
+var forceblastLevel = 1;
+var acidsplashLevel = 1;
+var magicmissileLevel = 1;
+    
+setInterval(function renderSpellLevel() {
+    document.getElementById("frostboltLevel").innerHTML = "Frostbolt " + "Level: " + Math.round(frostboltLevel);
+    document.getElementById("fireblastLevel").innerHTML = "Fireblast " + "Level: " + Math.round(fireblastLevel);
+    document.getElementById("smiteLevel").innerHTML = "Smite " + "Level: " + Math.round(smiteLevel);
+    document.getElementById("mindcontrolLevel").innerHTML = "Mind Control " + "Level: " + Math.round(mindcontrolLevel);
+    document.getElementById("lightningboltLevel").innerHTML = "Lightningbolt " + "Level: " + Math.round(lightningboltLevel);
+    document.getElementById("earthquakeLevel").innerHTML = "Earthquake " + "Level: " + Math.round(earthquakeLevel);
+    document.getElementById("forceblastLevel").innerHTML = "Forceblast " + "Level: " + Math.round(forceblastLevel);
+    document.getElementById("acidsplashLevel").innerHTML = "Acid Splash " + "Level: " + Math.round(acidsplashLevel);
+    document.getElementById("magicmissileLevel").innerHTML = "Magic Missile " + "Level: " + Math.round(magicmissileLevel);
+    // Displays Spell Levels.
+})
+
+function frostboltLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        frostboltLevel += 1;
+    }
+    else{
+    }
+}
+    
+function fireblastLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        fireblastLevel += 1;
+    }
+    else{
+    }
+}
+    
+function smiteLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        smiteLevel += 1;
+    }
+    else{
+    }
+}
+    
+function mindcontrolLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        mindcontrolLevel += 1;
+    }
+    else{
+    }
+}
+    
+function lightningboltLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        lightningboltLevel += 1;
+    }
+    else{
+    }
+}
+    
+function earthquakeLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        earthquakeLevel += 1;
+    }
+    else{
+    }
+}
+    
+function forceblastLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        forceblastLevel += 1;
+    }
+    else{
+    }
+}
+    
+function acidsplashLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        acidsplashLevel += 1;
+    }
+    else{
+    }
+}
+    
+function magicmissileLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        magicmissileLevel += 1;
+    }
+    else{
+    }
+}
+    
+    
+</script>
+    
+    
+
+<div style="height:430px;width:300px;border:1px solid #ccc;font:20px/10px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:535; ">
+    <p id="strengthLevel"></p>
+    <p id="constitutionLevel"></p>
+    <p id="defenseLevel"></p>
+    <p id="dexterityLevel"></p>
+    <p id="intelligenceLevel"></p>
+    <p id="charismaLevel"></p>
+    <p id="wisdomLevel"></p>
+    <p id="willpowerLevel"></p>
+    <p id="perceptionLevel"></p>
+    <p id="luckLevel"></p>
+    <p id="attackspeedLevel"></p>
+    <p id="hpLevel"></p>
+    <p id="mpLevel"></p>
+    </div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:50; ">       
+    <p id="currentQuest"></p>
+</div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:30px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1605; top:375; ">   
+</div>   
+        
+<div style="z-index: 10; position: absolute; right:1600; top:450; font-size: 30px; color:black;">
+<progress id="armorProgress" value="1" max="100">
+</progress>
+    </div>   
+
+<div style="z-index: 10; position: absolute; right:1600; top:290; font-size: 30px; color:black;">
+<progress id="weaponProgress" value="1" max="100">
+</progress>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1291; top:122; font-size: 30px; color:black;">
+<progress id="levelProgress" value="0" max="1000">
+</progress>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1410; top:105; font-size: 20px; color:black;">
+<p id="xpHave"></p>
+    </div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:50; ">
+<p id="level"></p>
+</div>
+    
+<div style="z-index: 10; position: absolute; right:1735; top:105; font-size: 20px; color:black;">
+<p id="questXp"></p>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1000; top:125; font-size: 30px; color:black;">
+<p id="enemyXp"></p>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1740; top:273; font-size: 20px; color:black;">
+<p id="weaponXp"></p>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1740; top:433; font-size: 20px; color:black;">
+<p id="armorXp"></p>
+    </div>
+
+<script>
+
+var items = [
+    "Scrap Of Cloth. ",
+    "Broken Bottle. ",
+    "Rabbit Foot. ",
+    "Bat Eye. ",
+    "Lucky Rat's Tooth. ",
+    "Old Lucky Coin. ",
+    "Squished Demon Eye. ",
+    "Old Flask. ",
+    "Old Knife. ",
+    "Old Hat. ",
+    "Melted Candle. ",
+    "Pointy Tooth. ",
+    "Broken Tooth. ",
+    "Troll Sweat. ",
+    "Long Soft Tail. ",
+    "Fine Sand. ",
+    "Broken Skull. ",
+    "Hide. ",
+    "Feather. ",
+    "Shiny Polished Stone. ",
+    "Empty Barrel. ",
+    "Eagle Eye. ",
+    "Cracked Egg Shells. ",
+    "Lifeless Stone. ",
+    "Dry Scorpion Eye. ",
+    "Slimy Bones. ",
+    "Broken Wishbone. ",
+    "Fine Loose Hair. ",
+    "Bright Eyeball. ",
+    "Empty Wallet. ",
+    "Gnawed Bone. ",
+    "Bent Spoon. ",
+    "Small Pocket Watch. ",
+    "Scratching Stick. ",
+    "Broken Mirror. ",
+    "A Pretty Rock. ",
+    "Old Skull. ",
+    "Silver Hook. ",
+    "Old Wagonwheel. ",
+    "Broken Fang. ",
+    "Bug Eye. ",
+    "Extinguished Torch. ",
+    "Smooth Fur. ",
+    "Small Mushroom. ",
+    "Evil Eye. ",
+    "Strange Crystal. ",
+    "Rusted Lock. ",
+    "Broken Spyglass. ",
+    "Cracked Horn. ",
+    "A Very Pretty Rock. ",
+    "Bent House Key. ",
+    "Large Snail Shell. ",
+    
+];
+    
+    
+var goldFromInventory = 1;
+    
+setInterval(function renderGoldFromInventory() {
+    document.getElementById("goldFromInventory").innerHTML = "Inventory Worth:" + " " + Math.round(goldFromInventory) + " Gold";
+    // Displays The Amount Of Gold You Get From Selling Your Inventory.
+})
+
+function inventoryReset() {
+    document.getElementById('items').innerHTML = "";
+    gold += goldFromInventory;
+    goldFromInventory = 0;
+}
+
+document.addEventListener('DOMContentLoaded', e => {
+    function renderItems() {
+        document.getElementById('items').innerHTML += "\n" + items[Math.floor(Math.random() * items.length)];
+    }
+
+    renderItems();
+    setInterval(renderItems, 8800);  
+}); 
+    
+document.addEventListener('DOMContentLoaded', e => {
+  function renderArmor() {
+   document.getElementById('currentArmor').textContent = armors[Math.floor(Math.random() * armors.length)];
+  }
+
+  renderArmor();
+  setInterval(renderArmor, 184800);
+});
+    
+
+    
+ setInterval(function weaponProgress() {
+    document.getElementById("weaponProgress").value += 5;
+}, 12800)
+
+setInterval(function weaponProgressNeeded() {
+    document.getElementById("weaponProgress").value = 0;
+    weaponLevel += 1;
+    weaponXp = 0;
+    talentpointsOnPrestige += 1;
+}, 268800)
+
+    
+    
+    
+setInterval(function renderWeaponLevel() {
+    document.getElementById("weaponLevel").innerHTML = "Weapon Level:" + " " + Math.round(weaponLevel);
+    // Displays Weapon Level.
+})
+
+var spellPoints = 0;
+
+ setInterval(function renderSpellPoints() {
+    spellPoints += 1;
+}, 184800)
+ 
+ setInterval(function renderSpellThingy() {
+    document.getElementById("spellPoints").innerHTML = "Unused Spell Points: " + Math.round(spellPoints);
+    // Displays Spell Points.
+})
+
+var strengthLevel = 13; // 1064800
+    
+ setInterval(function levelProgress() {
+    document.getElementById("levelProgress").value = 0;
+     level += 1;
+     xpHave = 0;
+     strengthLevel += 4;
+     conLevel += 3;
+     defLevel += 6;
+     dexLevel += 5;
+     intLevel += 3;
+     chaLevel += 8;
+     wisLevel += 4;
+     wilLevel += 2;
+     perLevel += 4;
+     lucLevel += 3;
+     hpLevel += 24;
+     mpLevel += 13;
+}, 8808800)
+ 
+ var actXp = 0;
+var act = 1;
+    
+ setInterval(function actProgress() {
+    document.getElementById("actProgress").value = 0;
+  actXp = 0;
+  act += 1;
+}, 88088000)
+ 
+setInterval(function renderActXp() {
+    document.getElementById("actXp").innerHTML = Math.round(actXp) + " / 100";
+    // Displays Act Xp.
+})
+
+setInterval(function renderAct() {
+    document.getElementById("act").innerHTML = "Act: " + Math.round(act);
+    // Displays Act.
+})
+ 
+var xpHave = 0;
+ 
+setInterval(function levelProgressNeeded() {
+    document.getElementById("levelProgress").value += 1;
+    xpHave += 1;
+    enemyXp = 0;
+    document.getElementById("enemyXp").value = 0;
+}, 8800)
+
+setInterval(function actIncrement() {
+    document.getElementById("actProgress").value += 1;
+    actXp += 1;
+}, 880000)
+
+setInterval(function renderXpHave() {
+    document.getElementById("xpHave").innerHTML = Math.round(xpHave) + " / 1000";
+    // Displays Level Xp.
+})
+
+var questXp = 0;
+
+setInterval(function renderQuestXp() {
+    document.getElementById("questXp").innerHTML = Math.round(questXp) + " / 105";
+    // Displays Quest Xp.
+})
+
+var enemyXp = 0;
+
+setInterval(function renderEnemyXp() {
+    document.getElementById("enemyXp").innerHTML = Math.round(enemyXp) + " / 100";
+    // Displays Enemy Xp.
+})
+
+setInterval(function enemyXpThingy() {
+    document.getElementById("enemyXp").value += 1;
+    enemyXp += 1;
+}, 88)
+
+var weaponXp = 0;
+
+setInterval(function renderWeaponXp() {
+    document.getElementById("weaponXp").innerHTML = Math.round(weaponXp) + " / 110";
+    // Displays Weapon Xp.
+})
+
+ setInterval(function weaponXpThingy() {
+    weaponXp += 1;    
+}, 2560)
+
+var level = 1;
+
+setInterval(function renderLevel() {
+    document.getElementById("level").innerHTML = "Level: " + Math.round(level);
+    // Displays Level.
+})
+ 
+setInterval(function renderStrength() {
+    document.getElementById("strengthLevel").innerHTML = "STR:" + " " + Math.round(strengthLevel);
+    // Displays Strength Level.
+})
+
+var conLevel = 4;    
+ 
+setInterval(function renderCon() {
+    document.getElementById("constitutionLevel").innerHTML = "CON:" + " " + Math.round(conLevel);
+    // Displays Strength Level.
+})
+
+var defLevel = 6;
+    
+setInterval(function renderDef() {
+    document.getElementById("defenseLevel").innerHTML = "DEF:" + " " + Math.round(defLevel);
+    // Displays Defense Level.
+})
+
+var dexLevel = 4;
+
+setInterval(function renderDex() {
+    document.getElementById("dexterityLevel").innerHTML = "DEX:" + " " + Math.round(dexLevel);
+    // Displays Dexterity Level.
+}) 
+
+var intLevel = 7;
+    
+setInterval(function renderInt() {
+    document.getElementById("intelligenceLevel").innerHTML = "INT:" + " " + Math.round(intLevel);
+    // Displays Intelligence Level.
+})
+
+var chaLevel = 5;
+    
+setInterval(function renderCha() {
+    document.getElementById("charismaLevel").innerHTML = "CHA:" + " " + Math.round(chaLevel);
+    // Displays Charisma Level.
+})
+
+var wisLevel = 2;
+    
+setInterval(function renderWis() {
+    document.getElementById("wisdomLevel").innerHTML = "WIS:" + " " + Math.round(defLevel);
+    // Displays Wisdom Level.
+})
+
+var wilLevel = 1;
+    
+setInterval(function renderWil() {
+    document.getElementById("willpowerLevel").innerHTML = "WIL:" + " " + Math.round(wilLevel);
+    // Displays Willpower Level.
+})
+
+var perLevel = 4;
+    
+setInterval(function renderPer() {
+    document.getElementById("perceptionLevel").innerHTML = "PER:" + " " + Math.round(perLevel);
+    // Displays Perception Level.
+})
+
+var lucLevel = 3;
+    
+setInterval(function renderLuc() {
+    document.getElementById("luckLevel").innerHTML = "LUC:" + " " + Math.round(lucLevel);
+    // Displays Luck Level.
+})
+
+var hpLevel = 65;
+    
+setInterval(function renderHP() {
+    document.getElementById("hpLevel").innerHTML = "HP Max:" + " " + Math.round(hpLevel);
+    // Displays HP.
+})
+
+var mpLevel = 34;
+    
+setInterval(function renderMP() {
+    document.getElementById("mpLevel").innerHTML = "MP Max:" + " " + Math.round(mpLevel);
+    // Displays MP.
+})
+
+var attackspeedLevel = 10;
+
+setInterval(function renderAttackSpeed() {
+    document.getElementById("attackspeedLevel").innerHTML = "ATS: " + Math.round(attackspeedLevel) + "%";
+    // Displays Attack Speed.
+})
+    
+    </script>
+    
+<script>
+    
+ setInterval(function armorProgress() {
+    document.getElementById("armorProgress").value += 10;
+}, 16800)
+
+setInterval(function armorProgressNeeded() {
+    document.getElementById("armorProgress").value = 0;
+    armorLevel += 1;
+    armorXp = 0;
+    talentpointsOnPrestige += 1;
+}, 184800)
+
+var armorXp = 0;
+
+setInterval(function armorXpThingy() {
+     armorXp += 1;
+}, 1680)
+
+setInterval(function renderArmorXp() {
+    document.getElementById("armorXp").innerHTML = Math.round(armorXp) + " / 110";
+    // Displays Armor Xp.
+})
+
+document.addEventListener('DOMContentLoaded', e => {
+  function renderArmor() {
+   document.getElementById('currentArmor').textContent = armors[Math.floor(Math.random() * armors.length)];
+  }
+
+  renderArmor();
+  setInterval(renderArmor, 184800);
+});
+    
+setInterval(function renderArmorLevel() {
+    document.getElementById("armorLevel").innerHTML = "Armor Level:" + " " + Math.round(armorLevel);
+    // Displays Armor Level.
+})
+
+const armors = [
+    'Robe',
+    'Fine Robe',
+    'Leather',
+    'Ring Mail',
+    'Invader Leathers',
+    'Warrior Chainmail',
+    'Studded Leather',
+    'Scalemail',
+    'Chainmail',
+    'Banded Mail',
+    'Warrior Platemail',
+    'Platemail',
+    'Necromancer Robe',
+    'Ancient Chainmail',
+    'Skeletal Platemail',
+    'Silver Platemail',
+    'Field Platemail',
+    'Full Platemail',
+
+];
+
+    </script>    
+
+<script>
+    
+var weaponLevel = 0;
+var armorLevel = 1;
+    
+  const weapons = [
+    'Wooden Stick',
+    'Wooden Club',
+    'Dagger',
+    'Short Sword',
+    'Long Sword',
+    'Mace',
+    'Axe',
+    'Battle Axe',
+    'Scythe',
+    'Staff',
+    'Broad Sword',
+    'Scimitar',
+    'Rapier',
+    'Flail',
+    'Sabre',
+    'Katana',
+    'Lance',
+    'War Pike',
+    'Halberd',
+    'Nunchacku',
+    'Hunting Bow',
+    'Gladius',
+    'Morning Star',
+    'Voulge',
+    'Crossbow',
+    'Sharp Rock',
+      
+      ];
+   
+document.addEventListener('DOMContentLoaded', e => {
+  function renderWeapon() {
+    document.getElementById('currentWeapon').textContent = weapons[Math.floor(Math.random() * weapons.length)];
+    weaponLevel += 1;
+  }
+
+  renderWeapon();
+  setInterval(renderWeapon, 268800);
+});
+    
+    
+</script>
+    
+<script>
+
+var questsCompleted = 0;  
+    
+ setInterval(function questProgress() {
+    document.getElementById("questProgress").value += 5;
+}, 8800)
+ 
+ setInterval(function questProgress() {   
+}, 17600)
+ 
+ setInterval(function questXpThingy() {
+     questXp += 1;
+}, 1760)
+
+setInterval(function QuestProgressNeeded() {
+    document.getElementById("questProgress").value = 0;
+    questXp = 0;
+    questsCompleted += 1;
+}, 184800)
+ 
+setInterval(function renderQuestsCompleted() {
+    document.getElementById("questsCompleted").innerHTML = "Quests Completed:" + " " + Math.round(questsCompleted);
+    // Displays Quests Completed.
+})
+
+const quests = ['Fetch me a coin',
+'Seek the Magicle Book',
+'Exterminate the Water Elementals',
+'Deliver this shirt',
+'Fetch me an egg',
+'Seek the Giant Chicken',
+'Deliver this book',
+'Deliver this letter',
+'Exterminate the Rats',
+'Fetch me a rock',
+'Placate the Sand People',
+'Fetch me a pole',
+'Exterminate the Zombies',
+'Seek the Fearsome Tome',
+'Seek the Ancient Tiara',
+'Exterminate the Murloc Scouts',
+'Exterminate the Orc Mages',
+'Deliver this plank',
+'Deliver this artifact',
+'Fetch me a pearl',
+'Exterminate the Ghouls',
+'Placate the Air Elementals',
+'Exterminate the Minotaurs',
+'Deliver this potion',
+'Fetch me a mushroom',
+'Seek the Jungle Temple',
+'Seek the Unstable Portal',
+'Exterminate the Crocolisks',
+'Placate the Ghosts',
+'Fetch me a twig',
+'Deliver this barrel',
+'Seek the Forgotten Cave',
+'Exterminate the Fire Elementals',
+'Exterminate the Skeleton Warriors',
+'Fetch me a trinket',
+'Deliver this Leather Jacket',
+'Deliver this Chicken',
+'Exterminate the Goblins',
+'Fetch me some bread',
+'Exterminate the Bandits',
+'Deliver this ladder',
+'Fetch me a letter',
+'Deliver this coin',
+'Placate the Mummies',
+'Exterminate the Evil Mountain Goats',
+                          
+               ];
+
+document.addEventListener('DOMContentLoaded', e => {
+  function renderQuest() {
+    document.getElementById('currentQuest').textContent = quests[Math.floor(Math.random() * quests.length)];
+  }
+
+  renderQuest();
+  setInterval(renderQuest, 184800);
+});
+    
+</script>
+    
+
+<script>
+ 
+var gold = 0;
+var stage = 1;
+var talentpoints = 0;
+var talentpointsOnPrestige = 0;
+
+setInterval(function progress() {
+    document.getElementById("progress").value += 10;
+}, 800)
+
+setInterval(function progressNeeded() {
+    document.getElementById("progress").value = 0;
+    goldFromInventory += 1;
+    stage += 1;
+}, 8800)
+
+setInterval(function renderGold() {
+    document.getElementById("gold").innerHTML = "Gold:" + " " + Math.round(gold);
+    // Displays Gold.
+    document.getElementById("stage").innerHTML = "Stage: " + Math.round(stage); // Displays Stage.
+    document.getElementById("talentpointsOnPrestige").innerHTML = "Talent Points On Prestige: " + Math.round(talentpointsOnPrestige); // Displays Talent Points On Prestige.
+    document.getElementById("talentpoints").innerHTML = "Unused Talent Points: " + Math.round(talentpoints); // Displays Talent Points.
+})  
+
+function prestige() {
+    if(talentpointsOnPrestige >= 1){
+        stage = 1;
+        talentpoints += talentpointsOnPrestige;
+        talentpointsOnPrestige = 0;
+    }
+    else{
+    }
+}
+
+const enemies = ['Executing a Wolf...',
+'Executing a Ghost...',
+'Executing a Zombie...', 
+'Executing a Skeleton...', 
+'Executing a Spider...', 
+'Executing a Undead...', 
+'Executing a Giant Rat...', 
+'Executing a Bat...', 
+'Executing a Reptilian Humanoid...', 
+'Executing a Skeleton Warrior...', 
+'Executing a Ghoul...',
+'Executing a Vampire...',
+'Executing an Orc...',
+'Executing a Bear...',
+'Executing a Cyclops...',
+'Executing a Witch...',
+'Executing a Wizard...',
+'Executing a Warlock...',
+'Executing a Spellcaster...',
+'Executing a Demon...',
+'Executing a Mummy...',
+'Executing an Ogre...',
+'Executing a Minotaur...',
+'Executing a Werewolf...',
+'Executing a Gnoll...',
+'Executing a Elemental...',
+'Executing an Ant...',
+'Executing a Chimera...',
+'Executing a Beholder...',
+'Executing a Snake...',
+'Executing a Bandit...',
+'Executing a Scorpion...',
+'Executing a Lich...',
+'Executing a Hydra...',
+'Executing a Basilisks...',
+'Executing a Evil Monk...',
+'Executing a Necromancer...',
+'Executing a Turtle...',
+'Executing a Ninja...',
+'Executing a Centipede...',
+'Executing a Lion...',
+'Executing a Crab...',
+'Executing a Giant Crab...',
+'Executing a Gremlin...',
+'Executing a Hellhound...',
+'Executing a Cockatrice...',
+'Executing a Roc...',
+'Executing a Berserker...',
+'Executing a Barghest...',
+'Executing a Arachnoid...',
+'Executing a Ifrit...',
+'Executing a Satyr...',
+'Executing a Wyvern...',
+'Executing a Beastmen...',
+'Executing a Phoenix...',
+'Executing a Evil Unicorn...',
+'Executing a Genie...',
+'Executing a Werehog...',
+'Executing a Worgen...',
+'Executing a Slime Monster...',
+'Executing a Boar...',
+'Executing a Tonberry...',
+'Executing a Pikaman...',
+'Executing a Cactuar...',
+'Executing an Evil Pickle...',
+'Executing a Owlbear...',
+'Executing a Gorgon...',
+'Executing a Sea Monster...',
+'Executing a Manticore...',
+'Executing a Goritaur...',
+'Executing a Arctle...',
+'Executing a Murloc...',
+'Executing a Vydral...',
+'Executing a Blitz...',
+'Executing a Animus...'];
+document.addEventListener('DOMContentLoaded', e => {
+  function renderEnemy() {
+    document.getElementById('words').textContent = enemies[Math.floor(Math.random() * enemies.length)];
+    gold += 3;
+    gold += goldPS;
+  }
+
+  renderEnemy();
+  setInterval(renderEnemy, 8800);
+});
+    
+</script>    
+
+   
+</script>  
+</body>    
+
+=======
+<!DOCTYPE>
+<html>
+    
+<script>
+    
+function save() {
+    localStorage.setItem("gold", gold);
+    localStorage.setItem("questsCompleted", questsCompleted);
+    localStorage.setItem("goldperkill", goldPS);
+    localStorage.setItem("stage", stage);
+    localStorage.setItem("talentpointsOnPrestige", talentpointsOnPrestige);
+    localStorage.setItem("talentpoints", talentpoints);
+    localStorage.setItem("invaderLevel", invaderLevel);
+    localStorage.setItem("invaderCost", invaderCost);
+    localStorage.setItem("raiderLevel", raiderLevel);
+    localStorage.setItem("raiderCost", raiderCost);
+    localStorage.setItem("squireLevel", squireLevel);
+    localStorage.setItem("squireCost", squireCost);
+    localStorage.setItem("footmanLevel", footmanLevel);
+    localStorage.setItem("footmanCost", footmanCost);
+    localStorage.setItem("knightLevel", knightLevel);
+    localStorage.setItem("knightCost", knightCost);
+    localStorage.setItem("strengthLevel", strengthLevel);
+    localStorage.setItem("constitutionLevel", conLevel);
+    localStorage.setItem("defenseLevel", defLevel);
+    localStorage.setItem("dexterityLevel", dexLevel);
+    localStorage.setItem("intelligenceLevel", intLevel);
+    localStorage.setItem("charismaLevel", chaLevel);
+    localStorage.setItem("wisdomLevel", wisLevel);
+    localStorage.setItem("willpowerLevel", wilLevel);
+    localStorage.setItem("perceptionLevel", perLevel);
+    localStorage.setItem("luckLevel", lucLevel);
+    localStorage.setItem("attackspeedLevel", attackspeedLevel);
+    localStorage.setItem("hpLevel", hpLevel);
+    localStorage.setItem("mpLevel", mpLevel);
+    localStorage.setItem("goldFromInventory", goldFromInventory);
+    localStorage.setItem("level", level);
+    localStorage.setItem("act", act);
+    localStorage.setItem("weaponLevel", weaponLevel);
+    localStorage.setItem("armorLevel", armorLevel);
+    localStorage.setItem("manavaultLevel", manavaultLevel);
+    localStorage.setItem("healthvaultLevel", healthvaultLevel);
+    localStorage.setItem("attackspeedthingyLevel", attackspeedthingyLevel);
+    localStorage.setItem("frostboltLevel", frostboltLevel);
+    localStorage.setItem("fireblastLevel", fireblastLevel);
+    localStorage.setItem("smiteLevel", smiteLevel);
+    localStorage.setItem("mindcontrolLevel", mindcontrolLevel);
+    localStorage.setItem("lightningboltLevel", lightningboltLevel);
+    localStorage.setItem("earthquakeLevel", earthquakeLevel);
+    localStorage.setItem("forceblastLevel", forceblastLevel);
+    localStorage.setItem("acidsplashLevel", acidsplashLevel);
+    localStorage.setItem("magicmissileLevel", magicmissileLevel);
+    localStorage.setItem("spellPoints", spellPoints);
+    
+}
+    
+function load() {
+    gold = localStorage.getItem("gold");
+    gold = parseInt(gold);
+    document.getElementById('gold').value = gold;
+    
+    questsCompleted = localStorage.getItem("questsCompleted");
+    questsCompleted = parseInt(questsCompleted);
+    document.getElementById('questsCompleted').value = questsCompleted;
+    
+    goldPS = localStorage.getItem("goldperkill");
+    goldPS = parseInt(goldPS);
+    document.getElementById('goldPS').value = goldPS;
+    
+    stage = localStorage.getItem("stage");
+    stage = parseInt(stage);
+    document.getElementById('stage').value = stage;
+    
+    talentpointsOnPrestige = localStorage.getItem("talentpointsOnPrestige");
+    talentpointsOnPrestige = parseInt(talentpointsOnPrestige);
+    document.getElementById('talentpointsOnPrestige').value = talentpointsOnPrestige;
+    
+    talentpoints = localStorage.getItem("talentpoints");
+    talentpoints = parseInt(talentpoints);
+    document.getElementById('talentpoints').value = talentpoints;
+    
+    invaderLevel = localStorage.getItem("invaderLevel");
+    invaderLevel = parseInt(invaderLevel);
+    document.getElementById('invaderLevel').value = invaderLevel;
+    
+    invaderCost = localStorage.getItem("invaderCost");
+    invaderCost = parseInt(invaderCost);
+    document.getElementById('invaderCost').value = invaderCost;
+    
+    raiderLevel = localStorage.getItem("raiderLevel");
+    raiderLevel = parseInt(raiderLevel);
+    document.getElementById('raiderLevel').value = raiderLevel;
+    
+    raiderCost = localStorage.getItem("raiderCost");
+    raiderCost = parseInt(raiderCost);
+    document.getElementById('raiderCost').value = raiderCost;
+    
+    squireLevel = localStorage.getItem("squireLevel");
+    squireLevel = parseInt(squireLevel);
+    document.getElementById('squireLevel').value = squireLevel;
+    
+    squireCost = localStorage.getItem("squireCost");
+    squireCost = parseInt(squireCost);
+    document.getElementById('squireCost').value = squireCost;
+    
+    footmanLevel = localStorage.getItem("footmanLevel");
+    footmanLevel = parseInt(footmanLevel);
+    document.getElementById('footmanLevel').value = footmanLevel;
+    
+    footmanCost = localStorage.getItem("footmanCost");
+    footmanCost = parseInt(footmanCost);
+    document.getElementById('footmanCost').value = footmanCost;
+    
+    knightLevel = localStorage.getItem("knightLevel");
+    knightLevel = parseInt(knightLevel);
+    document.getElementById('knightLevel').value = knightLevel;
+    
+    knightCost = localStorage.getItem("knightCost");
+    knightCost = parseInt(knightCost);
+    document.getElementById('knightCost').value = knightCost;
+    
+    strengthLevel = localStorage.getItem("strengthLevel");
+    strengthLevel = parseInt(strengthLevel);
+    document.getElementById('strengthLevel').value = strengthLevel;
+    
+    conLevel = localStorage.getItem("constitutionLevel");
+    conLevel = parseInt(conLevel);
+    document.getElementById('constitutionLevel').value = conLevel;
+    
+    defLevel = localStorage.getItem("defenseLevel");
+    defLevel = parseInt(defLevel);
+    document.getElementById('defenseLevel').value = defLevel;
+    
+    dexLevel = localStorage.getItem("dexterityLevel");
+    dexLevel = parseInt(dexLevel);
+    document.getElementById('dexterityLevel').value = dexLevel;
+    
+    intLevel = localStorage.getItem("intelligenceLevel");
+    intLevel = parseInt(intLevel);
+    document.getElementById('intelligenceLevel').value = intLevel;
+    
+    chaLevel = localStorage.getItem("charismaLevel");
+    chaLevel = parseInt(chaLevel);
+    document.getElementById('charismaLevel').value = chaLevel;
+    
+    wisLevel = localStorage.getItem("wisdomLevel");
+    wisLevel = parseInt(wisLevel);
+    document.getElementById('wisdomLevel').value = wisLevel;
+    
+    wilLevel = localStorage.getItem("willpowerLevel");
+    wilLevel = parseInt(wilLevel);
+    document.getElementById('willpowerLevel').value = wilLevel;
+    
+    perLevel = localStorage.getItem("perceptionLevel");
+    perLevel = parseInt(perLevel);
+    document.getElementById('perceptionLevel').value = perLevel;
+    
+    lucLevel = localStorage.getItem("luckLevel");
+    lucLevel = parseInt(lucLevel);
+    document.getElementById('luckLevel').value = lucLevel;
+    
+    attackspeedLevel = localStorage.getItem("attackspeedLevel");
+    attackspeedLevel = parseInt(attackspeedLevel);
+    document.getElementById('attackspeedLevel').value = attackspeedLevel;
+    
+    hpLevel = localStorage.getItem("hpLevel");
+    hpLevel = parseInt(hpLevel);
+    document.getElementById('hpLevel').value = hpLevel;
+    
+    mpLevel = localStorage.getItem("mpLevel");
+    mpLevel = parseInt(mpLevel);
+    document.getElementById('mpLevel').value = mpLevel;
+    
+    goldFromInventory = localStorage.getItem("goldFromInventory");
+    goldFromInventory = parseInt(goldFromInventory);
+    document.getElementById('goldFromInventory').value = goldFromInventory;
+    
+    level = localStorage.getItem("level");
+    level = parseInt(level);
+    document.getElementById('level').value = level;
+    
+    act = localStorage.getItem("act");
+    act = parseInt(act);
+    document.getElementById('act').value = act;
+    
+    weaponLevel = localStorage.getItem("weaponLevel");
+    weaponLevel = parseInt(weaponLevel);
+    document.getElementById('weaponLevel').value = weaponLevel;
+    
+    armorLevel = localStorage.getItem("armorLevel");
+    armorLevel = parseInt(armorLevel);
+    document.getElementById('armorLevel').value = armorLevel;
+    
+    manavaultLevel = localStorage.getItem("manavaultLevel");
+    manavaultLevel = parseInt(manavaultLevel);
+    document.getElementById('manavaultLevel').value = manavaultLevel;
+    
+    healthvaultLevel = localStorage.getItem("healthvaultLevel");
+    healthvaultLevel = parseInt(healthvaultLevel);
+    document.getElementById('healthvaultLevel').value = healthvaultLevel;
+    
+    attackspeedthingyLevel = localStorage.getItem("attackspeedthingyLevel");
+    attackspeedthingyLevel = parseInt(attackspeedthingyLevel);
+    document.getElementById('attackspeedthingyLevel').value = attackspeedthingyLevel;
+    
+    frostboltLevel = localStorage.getItem("frostboltLevel");
+    frostboltLevel = parseInt(frostboltLevel);
+    document.getElementById('forceblastLevel').value = frostboltLevel;
+    
+    fireblastLevel = localStorage.getItem("fireblastLevel");
+    fireblastLevel = parseInt(fireblastLevel);
+    document.getElementById('fireblastLevel').value = fireblastLevel;
+    
+    smiteLevel = localStorage.getItem("smiteLevel");
+    smiteLevel = parseInt(smiteLevel);
+    document.getElementById('smiteLevel').value = smiteLevel;
+    
+    mindcontrolLevel = localStorage.getItem("mindcontrolLevel");
+    mindcontrolLevel = parseInt(mindcontrolLevel);
+    document.getElementById('mindcontrolLevel').value = mindcontrolLevel;
+    
+    lightningboltLevel = localStorage.getItem("lightningboltLevel");
+    lightningboltLevel = parseInt(lightningboltLevel);
+    document.getElementById('lightningboltLevel').value = lightningboltLevel;
+    
+    earthquakeLevel = localStorage.getItem("earthquakeLevel");
+    earthquakeLevel = parseInt(earthquakeLevel);
+    document.getElementById('earthquakeLevel').value = earthquakeLevel;
+    
+    forceblastLevel = localStorage.getItem("forceblastLevel");
+    forceblastLevel = parseInt(forceblastLevel);
+    document.getElementById('forceblastLevel').value = forceblastLevel;
+    
+    acidsplashLevel = localStorage.getItem("acidsplashLevel");
+    acidsplashLevel = parseInt(acidsplashLevel);
+    document.getElementById('acidsplashLevel').value = acidsplashLevel;
+    
+    magicmissileLevel = localStorage.getItem("magicmissileLevel");
+    magicmissileLevel = parseInt(magicmissileLevel);
+    document.getElementById('magicmissileLevel').value = magicmissileLevel;
+    
+    spellPoints = localStorage.getItem("spellPoints");
+    spellPoints = parseInt(spellPoints);
+    document.getElementById('spellPoints').value = spellPoints;
+    
+    setInterval(function() {
+    localStorage.setItem("gold", gold);
+    localStorage.setItem("questsCompleted", questsCompleted);
+    localStorage.setItem("goldperkill", goldPS);
+    localStorage.setItem("stage", stage);
+    localStorage.setItem("talentpointsOnPrestige", talentpointsOnPrestige);
+    localStorage.setItem("talentpoints", talentpoints);
+    localStorage.setItem("invaderLevel", invaderLevel);
+    localStorage.setItem("invaderCost", invaderCost);
+    localStorage.setItem("raiderLevel", raiderLevel);
+    localStorage.setItem("raiderCost", raiderCost);
+    localStorage.setItem("squireLevel", squireLevel);
+    localStorage.setItem("squireCost", squireCost);
+    localStorage.setItem("footmanLevel", footmanLevel);
+    localStorage.setItem("footmanCost", footmanCost);
+    localStorage.setItem("knightLevel", knightLevel);
+    localStorage.setItem("knightCost", knightCost);
+    localStorage.setItem("strengthLevel", strengthLevel);
+    localStorage.setItem("constitutionLevel", conLevel);
+    localStorage.setItem("defenseLevel", defLevel);
+    localStorage.setItem("dexterityLevel", dexLevel);
+    localStorage.setItem("intelligenceLevel", intLevel);
+    localStorage.setItem("charismaLevel", chaLevel);
+    localStorage.setItem("wisdomLevel", wisLevel);
+    localStorage.setItem("willpowerLevel", wilLevel);
+    localStorage.setItem("perceptionLevel", perLevel);
+    localStorage.setItem("luckLevel", lucLevel);
+    localStorage.setItem("attackspeedLevel", attackspeedLevel);
+    localStorage.setItem("hpLevel", hpLevel);
+    localStorage.setItem("mpLevel", mpLevel);
+    localStorage.setItem("goldFromInventory", goldFromInventory);
+    localStorage.setItem("level", level);
+    localStorage.setItem("act", act);
+    localStorage.setItem("weaponLevel", weaponLevel);
+    localStorage.setItem("armorLevel", armorLevel);
+    localStorage.setItem("manavaultLevel", manavaultLevel);
+    localStorage.setItem("healthvaultLevel", healthvaultLevel);
+    localStorage.setItem("attackspeedthingyLevel", attackspeedthingyLevel);
+    localStorage.setItem("frostboltLevel", frostboltLevel);
+    localStorage.setItem("fireblastLevel", fireblastLevel);
+    localStorage.setItem("smiteLevel", smiteLevel);
+    localStorage.setItem("mindcontrolLevel", mindcontrolLevel);
+    localStorage.setItem("lightningboltLevel", lightningboltLevel);
+    localStorage.setItem("earthquakeLevel", earthquakeLevel);
+    localStorage.setItem("forceblastLevel", forceblastLevel);
+    localStorage.setItem("acidsplashLevel", acidsplashLevel);
+    localStorage.setItem("magicmissileLevel", magicmissileLevel);
+    localStorage.setItem("spellPoints", spellPoints);
+    }, 100)
+    
+}
+    
+</script>
+<head>
+    
+<link rel="icon" type="image/png" href="loadingquesterlogo.png" />
+    
+<div style="height:75px;width:125px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:175; top:65; ">
+    <button button type="button" onClick="save()" >SAVE</button>
+    <b>=======</b>
+    <button button type="button" onClick="load()" >LOAD</button>
+    </div>
+    
+<div style="height:75px;width:225px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:175; top:150; ">
+    <p>IMPORTANT</p>
+    <p>If this is your first time ever playing
+    you need to do this:
+    Click the save button. Then click the load button.
+    Now the game saves automaticly.
+    Just remember to click load every time you play.</p>
+    </div>
+<div style="height:100px;width:200px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:550; top:20; ">
+<p id="p">Class: <i>please select a class</i></p>
+<button onclick="classPicker();">Change Class</button>
+<script>
+    function classPicker() {
+        var valid_inputs = ["alchemist",
+                            "arcane archer",
+                            "artificer",
+                            "assassin",
+                            "barbarian",
+                            "bard",
+                            "battlemage",
+                            "battlerager",
+                            "bounty hunter",
+                            "cavalier",
+                            "cleric",
+                            "crazy cat lady",
+                            "dragon knight",
+                            "dragon rider",
+                            "dragonslayer",
+                            "druid",
+                            "duelist",
+                            "dog whisperer",
+                            "fighter",
+                            "gladiator",
+                            "illusionist",
+                            "knight",
+                            "monk",
+                            "mage",
+                            "necromancer",
+                            "ninja",
+                            "oracle",
+                            "paladin",
+                            "psion",
+                            "psychic warrior",
+                            "priest",
+                            "ranger",
+                            "rogue",
+                            "scavenger",
+                            "scout",
+                            "shadowdancer",
+                            "shaman",
+                            "shadowmancer",
+                            "sorcerer",
+                            "soulmancer",
+                            "spidermage",
+                            "spider rider",
+                            "summoner",
+                            "swashbuckler",
+                            "thief",
+                            "thug",
+                            "warlock",
+                            "warlord",
+                            "warmage",
+                            "warrior",
+                            "whisperer",
+                            "witchhunter",
+                            "wizard",
+                           
+                           ];
+        var person = prompt(`Please enter one of these classes: ${valid_inputs.map(a => capitalize(a)).join(", ")}`, capitalize(valid_inputs[0]));
+        if (valid_inputs.indexOf(person.toLowerCase()) !== -1) {
+            document.getElementById("p").innerHTML = `Class: ${capitalize(person)}`;
+        } else {
+            alert("Please choose a valid class");
+            classPicker();
+        };
+    };
+    function capitalize(string) {
+        return string.substring(0, 1).toUpperCase() + string.substring(1);
+    };
+</script>
+    </div>
+    
+<div style="height:100px;width:200px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:325; top:20; ">
+<p id="p2">Race: <i>please select a race</i></p>
+<button onclick="racePicker();">Change Race</button>
+<script>
+    function racePicker() {
+        var valid_inputs = ["avian",
+                            "cat man",
+                            "centaur",
+                            "dragonman",
+                            "dwarf",
+                            "draenei",
+                            "elf",
+                            "gnome",
+                            "goblin",
+                            "human",
+                            "kobold",
+                            "lizard man",
+                            "orc",
+                            "pandarian",
+                            "ratling",
+                            "troglodyte",
+                            "worgen",
+                           
+                           ];
+        var person2 = prompt(`Please enter one of these races: ${valid_inputs.map(a => capitalize2(a)).join(", ")}`, capitalize2(valid_inputs[0]));
+        if (valid_inputs.indexOf(person2.toLowerCase()) !== -1) {
+            document.getElementById("p2").innerHTML = `Race: ${capitalize2(person2)}`;
+        } else {
+            alert("Please choose a valid race");
+            racePicker();
+        };
+    };
+    function capitalize2(string) {
+        return string.substring(0, 1).toUpperCase() + string.substring(1);
+    };
+</script>
+    </div> 
+
+<div style="height:35px;width:225px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:75; top:20; ">    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<input type="checkbox" name="skill" value="male"> Male
+<input type="checkbox" name="skill" value="female"> Female
+<input type="checkbox" name="skill" value="other"> Other
+
+<script>
+$(document).ready(function(){
+    $('input:checkbox').click(function() {
+        $('input:checkbox').not(this).prop('checked', false);
+    });
+});
+</script>
+    </div>
+    
+</head>
+    
+<body>    
+    
+<div style="z-index: 10; position: absolute; right:775; top:148; font-size: 50px; color:black;">
+<progress id="progress" value="1" max="100">
+</progress>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1600; top:122; font-size: 30px; color:black;">
+<progress id="questProgress" value="1" max="100">
+</progress>
+    </div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:200; ">
+ <p id="weaponLevel"></p>
+    </div>
+    
+ <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:169; ">Act</div>
+    
+<div style="z-index: 10; position: absolute; right:1810; top:230; font-size: 16px; color:black;">
+    <p id="currentWeapon"></p>
+    </div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:200; ">
+ <p id="act"></p>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1290; top:290; font-size: 30px; color:black;">
+<progress id="actProgress" value="1" max="100">
+</progress>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1415; top:275; font-size: 20px; color:black;">
+<p id="actXp"></p>
+    </div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:375; ">
+ <p id="armorLevel"></p>
+    </div>
+    
+    <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:169; ">Weapon</div>
+    
+    <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:344; ">Armor</div>
+    
+    <div style="z-index: 10; position: absolute; right:1775; top:400; font-size: 16px; color:black;">
+    <p id="currentArmor"></p>
+    </div>
+    
+  <div style="height:127px;width:499px;border:1px solid #ccc;font:25px/10px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:775; top:20; ">
+    <p id="questsCompleted"></p>
+    <p id="goldPS"></p>
+    <p id="gold"></p>
+    </div>
+    
+    <div style="height:100px;width:499px;border:1px solid #ccc;font:20px/10px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:775; top:235; ">
+    <p id="stage"></p>
+    <p id="talentpointsOnPrestige"></p>
+    <p id="talentpoints"></p>
+    </div>
+    
+    <div style="font-size:27px; z-index: 10; position: absolute; right:895; top:180;">
+    <p id="words"></p>
+    </div>
+    
+    <div style="font-size:27px; z-index: 10; position: absolute; right:575; top:310;">
+        <a href="https://discord.gg/PCkcCAJ">Join our Discord!</a>
+    </div>
+    
+    <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:344; ">Inventory
+    <button button type="button" onClick="inventoryReset()">Sell Items</button>
+    </div>
+    
+      <div style="height:100px;width:100px;border:1px solid #ccc;font:20px/20px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1490; top:375; ">
+    <p id="items"></p>
+    </div>
+    
+      <div style="height:100px;width:200px;border:1px solid #ccc;font:15px/20px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:375; ">
+    <p id="goldFromInventory"></p>
+    </div>
+    
+        <div style="height:45px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:975; top:344; ">Hire Adventurers 
+    </div>
+    
+     <div style="height:580px;width:300px;border:1px solid #ccc;font:20px/15px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:975; top:390; ">
+         <button button type="button" onClick="invaderBuy()" >Hire Invader (+1 Gold Per Kill)</button>
+         <p id="invaderCost"></p>
+         <p id="invaderLevel"></p>
+         <p>=================</p>
+         <button button type="button" onClick="raiderBuy()" >Hire Raider (+2 Gold Per Kill)</button>
+         <p id="raiderCost"></p>
+         <p id="raiderLevel"></p>
+         <p>=================</p>
+         <button button type="button" onClick="squireBuy()" >Hire Squire (+5 Gold Per Kill)</button>
+         <p id="squireCost"></p>
+         <p id="squireLevel"></p>
+         <p>=================</p>
+         <button button type="button" onClick="footmanBuy()" >Hire Footman (+10 Gold Per Kill)</button>
+         <p id="footmanCost"></p>
+         <p id="footmanLevel"></p>
+         <p>=================</p>
+         <button button type="button" onClick="knightBuy()" >Hire Knight (+15 Gold Per Kill)</button>
+         <p id="knightCost"></p>
+         <p id="knightLevel"></p>
+         <p>=================</p>
+             
+    </div>
+    
+    <div style="height:45px;width:400px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:555; top:344; ">Talents
+        <button button type="button" onClick="prestige()" >Prestige</button>
+    </div>
+    
+    <div style="height:580px;width:400px;border:1px solid #ccc;font:20px/10px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:555; top:390; ">
+        <button button type="button" onClick="manaUpgrade()" >Mana Vault</button>
+        <p>Cost: 1 Talent Point</p>
+        <p id="manavaultLevel"></p>
+        <p>+5 Max Mana.</p>
+        <p>=================</p>
+        <button button type="button" onClick="healthUpgrade()" >Health Vault</button>
+        <p>Cost: 1 Talent Point</p>
+        <p id="healthvaultLevel"></p>
+        <p>+10 Max Health.</p>
+        <p>=================</p>
+        <button button type="button" onClick="attackspeedUpgrade()" >Attack Speed</button>
+        <p>Cost: 1 Talent Point</p>
+        <p id="attackspeedthingyLevel"></p>
+        <p>+1 Attack Speed.</p>
+        <p>=================</p>
+        
+        
+        
+    </div>
+    
+    <script>
+        
+    setInterval(function renderTalentLevels() {
+        document.getElementById("manavaultLevel").innerHTML = "Level: " + Math.round(manavaultLevel); // Displays Mana Vault Level.
+        document.getElementById("healthvaultLevel").innerHTML = "Level: " + Math.round(healthvaultLevel); // Displays Health Vault Level.
+        document.getElementById("attackspeedthingyLevel").innerHTML = "Level: " + Math.round(attackspeedthingyLevel); // Displays Attack Speed Level.
+    })
+    
+    var manavaultLevel = 0;
+    var healthvaultLevel = 0;
+    var attackspeedthingyLevel = 0;
+    
+    function manaUpgrade() {
+        if(talentpoints >= 1){
+            talentpoints -= 1;
+            manavaultLevel += 1;
+            mpLevel += 5;
+        }
+        else{
+        }
+    }
+        
+    function healthUpgrade() {
+        if(talentpoints >= 1){
+            talentpoints -= 1;
+            healthvaultLevel += 1;
+            hpLevel += 10;
+        }
+        else{
+        }
+    }
+        
+    function attackspeedUpgrade() {
+        if(talentpoints >= 1){
+            talentpoints -= 1;
+            attackspeedthingyLevel += 1;
+            attackspeedLevel += 1;
+        }
+        else{
+        }
+    }
+    
+    
+    </script>
+    
+    
+    
+    <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:19; ">Quest</div>
+
+    <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:19; ">Level</div>
+    
+        <div style="height:30px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:504; ">Stats</div>
+    
+    <div style="height:65px;width:300px;border:1px solid #ccc;font:20px/12px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:504; ">Spellbook
+    <p style=" font:15px/15px Georgia, Garamond, Serif; " id="spellPoints"></p>
+    </div>
+    
+    <div style="height:400px;width:300px;border:1px solid #ccc;font:15px/10px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:570; ">
+    <p id="frostboltLevel"></p>
+    <button button type="button" onClick="frostboltLevelUp()">Level Up Frostbolt</button>
+    <p id="fireblastLevel"></p>
+    <button button type="button" onClick="fireblastLevelUp()">Level Up Fireblast</button>
+    <p id="smiteLevel"></p>
+    <button button type="button" onClick="smiteLevelUp()">Level Up Smite</button>
+    <p id="mindcontrolLevel"></p> 
+    <button button type="button" onClick="mindcontrolLevelUp()">Level Up Mind Control</button>
+    <p id="lightningboltLevel"></p>
+    <button button type="button" onClick="lightningboltLevelUp()">Level Up Lightningbolt</button>
+    <p id="earthquakeLevel"></p>
+    <button button type="button" onClick="earthquakeLevelUp()">Level Up Earthquake</button> 
+    <p id="forceblastLevel"></p>
+    <button button type="button" onClick="forceblastLevelUp()">Level Up Forceblast</button>
+    <p id="acidsplashLevel"></p>
+    <button button type="button" onClick="acidsplashLevelUp()">Level Up Acid Splash</button>
+    <p id="magicmissileLevel"></p>
+    <button button type="button" onClick="magicmissileLevelUp()">Level Up Magic Missile</button>
+  <script>
+      
+setInterval(function renderAdventures() {
+    document.getElementById("invaderLevel").innerHTML = "Level: " + Math.round(invaderLevel); // Displays Invader Level.
+    document.getElementById("invaderCost").innerHTML = "Cost: " + Math.round(invaderCost) + " Gold"; // Displays Invader Cost.
+    document.getElementById("raiderLevel").innerHTML = "Level: " + Math.round(raiderLevel); // Displays Raider Level.
+    document.getElementById("raiderCost").innerHTML = "Cost: " + Math.round(raiderCost) + " Gold"; // Displays Raider Cost.
+    document.getElementById("squireLevel").innerHTML = "Level: " + Math.round(squireLevel); // Displays Squire Level.
+    document.getElementById("squireCost").innerHTML = "Cost: " + Math.round(squireCost) + " Gold"; // Displays Squire Cost.
+    document.getElementById("footmanLevel").innerHTML = "Level: " + Math.round(footmanLevel); // Displays Footman Level.
+    document.getElementById("footmanCost").innerHTML = "Cost: " + Math.round(footmanCost) + " Gold"; // Displays Footman Cost.
+    document.getElementById("knightLevel").innerHTML = "Level: " + Math.round(knightLevel); // Displays Knight Level.
+    document.getElementById("knightCost").innerHTML = "Cost: " + Math.round(knightCost) + " Gold"; // Displays Knight Cost.
+})
+ 
+   var invaderLevel = 0;
+   var invaderCost = 100;
+      
+   var raiderLevel = 0;
+   var raiderCost = 250;
+      
+   var squireLevel = 0;
+   var squireCost = 500;
+      
+   var footmanLevel = 0;
+   var footmanCost = 1250;
+      
+   var knightLevel = 0;
+   var knightCost = 1750;      
+      
+      
+   function invaderBuy() {
+       if(gold >= invaderCost){
+           gold -= invaderCost;
+           invaderCost *= 1.30;
+           goldPS += 1;
+           invaderLevel += 1;
+       }
+       else{
+       }
+   }
+      
+    function raiderBuy() {
+        if(gold >= raiderCost){
+            gold -= raiderCost;
+            raiderCost *= 1.30;
+            goldPS += 2;
+            raiderLevel += 1;
+        }
+        else{
+        }
+    }
+
+      
+    function squireBuy() {
+        if(gold >= squireCost){
+            gold -= squireCost;
+            squireCost *= 1.30;
+            goldPS += 5;
+            squireLevel += 1;
+        }
+        else{
+        }
+    } 
+    
+    function footmanBuy() {
+        if(gold >= footmanCost){
+            gold -= footmanCost;
+            footmanCost *= 1.30;
+            goldPS += 10;
+            footmanLevel += 1;
+        }
+        else{
+        }
+    }
+      
+    function knightBuy() {
+        if(gold >= knightCost){
+            gold -= knightCost;
+            knightCost *= 1.30;
+            goldPS += 15;
+            knightLevel += 1;
+        }
+        else{
+        }
+    }
+      
+      
+      
+        </script>        
+
+
+<script>
+           
+var goldPS = 0;
+
+setInterval(function renderGoldPerSec() {
+    document.getElementById("goldPS").innerHTML = "Bonus Gold Per Kill: " + Math.round(goldPS); // Displays Gold Per Kill.
+})
+      
+        
+</script>   
+        
+        
+        
+    </div>
+<script>
+    
+var frostboltLevel = 1;
+var fireblastLevel = 1;
+var smiteLevel = 1;
+var mindcontrolLevel = 1;
+var lightningboltLevel = 1;
+var earthquakeLevel = 1;
+var forceblastLevel = 1;
+var acidsplashLevel = 1;
+var magicmissileLevel = 1;
+    
+setInterval(function renderSpellLevel() {
+    document.getElementById("frostboltLevel").innerHTML = "Frostbolt " + "Level: " + Math.round(frostboltLevel);
+    document.getElementById("fireblastLevel").innerHTML = "Fireblast " + "Level: " + Math.round(fireblastLevel);
+    document.getElementById("smiteLevel").innerHTML = "Smite " + "Level: " + Math.round(smiteLevel);
+    document.getElementById("mindcontrolLevel").innerHTML = "Mind Control " + "Level: " + Math.round(mindcontrolLevel);
+    document.getElementById("lightningboltLevel").innerHTML = "Lightningbolt " + "Level: " + Math.round(lightningboltLevel);
+    document.getElementById("earthquakeLevel").innerHTML = "Earthquake " + "Level: " + Math.round(earthquakeLevel);
+    document.getElementById("forceblastLevel").innerHTML = "Forceblast " + "Level: " + Math.round(forceblastLevel);
+    document.getElementById("acidsplashLevel").innerHTML = "Acid Splash " + "Level: " + Math.round(acidsplashLevel);
+    document.getElementById("magicmissileLevel").innerHTML = "Magic Missile " + "Level: " + Math.round(magicmissileLevel);
+    // Displays Spell Levels.
+})
+
+function frostboltLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        frostboltLevel += 1;
+    }
+    else{
+    }
+}
+    
+function fireblastLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        fireblastLevel += 1;
+    }
+    else{
+    }
+}
+    
+function smiteLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        smiteLevel += 1;
+    }
+    else{
+    }
+}
+    
+function mindcontrolLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        mindcontrolLevel += 1;
+    }
+    else{
+    }
+}
+    
+function lightningboltLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        lightningboltLevel += 1;
+    }
+    else{
+    }
+}
+    
+function earthquakeLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        earthquakeLevel += 1;
+    }
+    else{
+    }
+}
+    
+function forceblastLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        forceblastLevel += 1;
+    }
+    else{
+    }
+}
+    
+function acidsplashLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        acidsplashLevel += 1;
+    }
+    else{
+    }
+}
+    
+function magicmissileLevelUp() {
+    if(spellPoints >= 1){
+        spellPoints -= 1;
+        magicmissileLevel += 1;
+    }
+    else{
+    }
+}
+    
+    
+</script>
+    
+    
+
+<div style="height:430px;width:300px;border:1px solid #ccc;font:20px/10px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:535; ">
+    <p id="strengthLevel"></p>
+    <p id="constitutionLevel"></p>
+    <p id="defenseLevel"></p>
+    <p id="dexterityLevel"></p>
+    <p id="intelligenceLevel"></p>
+    <p id="charismaLevel"></p>
+    <p id="wisdomLevel"></p>
+    <p id="willpowerLevel"></p>
+    <p id="perceptionLevel"></p>
+    <p id="luckLevel"></p>
+    <p id="attackspeedLevel"></p>
+    <p id="hpLevel"></p>
+    <p id="mpLevel"></p>
+    </div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1600; top:50; ">       
+    <p id="currentQuest"></p>
+</div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:30px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1605; top:375; ">   
+</div>   
+        
+<div style="z-index: 10; position: absolute; right:1600; top:450; font-size: 30px; color:black;">
+<progress id="armorProgress" value="1" max="100">
+</progress>
+    </div>   
+
+<div style="z-index: 10; position: absolute; right:1600; top:290; font-size: 30px; color:black;">
+<progress id="weaponProgress" value="1" max="100">
+</progress>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1291; top:122; font-size: 30px; color:black;">
+<progress id="levelProgress" value="0" max="1000">
+</progress>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1410; top:105; font-size: 20px; color:black;">
+<p id="xpHave"></p>
+    </div>
+    
+<div style="height:100px;width:300px;border:1px solid #ccc;font:20px/26px Georgia, Garamond, Serif;overflow:auto; z-index: 10; position: absolute; right:1290; top:50; ">
+<p id="level"></p>
+</div>
+    
+<div style="z-index: 10; position: absolute; right:1735; top:105; font-size: 20px; color:black;">
+<p id="questXp"></p>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1000; top:125; font-size: 30px; color:black;">
+<p id="enemyXp"></p>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1740; top:273; font-size: 20px; color:black;">
+<p id="weaponXp"></p>
+    </div>
+    
+<div style="z-index: 10; position: absolute; right:1740; top:433; font-size: 20px; color:black;">
+<p id="armorXp"></p>
+    </div>
+
+<script>
+
+var items = [
+    "Scrap Of Cloth. ",
+    "Broken Bottle. ",
+    "Rabbit Foot. ",
+    "Bat Eye. ",
+    "Lucky Rat's Tooth. ",
+    "Old Lucky Coin. ",
+    "Squished Demon Eye. ",
+    "Old Flask. ",
+    "Old Knife. ",
+    "Old Hat. ",
+    "Melted Candle. ",
+    "Pointy Tooth. ",
+    "Broken Tooth. ",
+    "Troll Sweat. ",
+    "Long Soft Tail. ",
+    "Fine Sand. ",
+    "Broken Skull. ",
+    "Hide. ",
+    "Feather. ",
+    "Shiny Polished Stone. ",
+    "Empty Barrel. ",
+    "Eagle Eye. ",
+    "Cracked Egg Shells. ",
+    "Lifeless Stone. ",
+    "Dry Scorpion Eye. ",
+    "Slimy Bones. ",
+    "Broken Wishbone. ",
+    "Fine Loose Hair. ",
+    "Bright Eyeball. ",
+    "Empty Wallet. ",
+    "Gnawed Bone. ",
+    "Bent Spoon. ",
+    "Small Pocket Watch. ",
+    "Scratching Stick. ",
+    "Broken Mirror. ",
+    "A Pretty Rock. ",
+    "Old Skull. ",
+    "Silver Hook. ",
+    "Old Wagonwheel. ",
+    "Broken Fang. ",
+    "Bug Eye. ",
+    "Extinguished Torch. ",
+    "Smooth Fur. ",
+    "Small Mushroom. ",
+    "Evil Eye. ",
+    "Strange Crystal. ",
+    "Rusted Lock. ",
+    "Broken Spyglass. ",
+    "Cracked Horn. ",
+    "A Very Pretty Rock. ",
+    "Bent House Key. ",
+    "Large Snail Shell. ",
+    
+];
+    
+    
+var goldFromInventory = 1;
+    
+setInterval(function renderGoldFromInventory() {
+    document.getElementById("goldFromInventory").innerHTML = "Inventory Worth:" + " " + Math.round(goldFromInventory) + " Gold";
+    // Displays The Amount Of Gold You Get From Selling Your Inventory.
+})
+
+function inventoryReset() {
+    document.getElementById('items').innerHTML = "";
+    gold += goldFromInventory;
+    goldFromInventory = 0;
+}
+
+document.addEventListener('DOMContentLoaded', e => {
+    function renderItems() {
+        document.getElementById('items').innerHTML += "\n" + items[Math.floor(Math.random() * items.length)];
+    }
+
+    renderItems();
+    setInterval(renderItems, 8800);  
+}); 
+    
+document.addEventListener('DOMContentLoaded', e => {
+  function renderArmor() {
+   document.getElementById('currentArmor').textContent = armors[Math.floor(Math.random() * armors.length)];
+  }
+
+  renderArmor();
+  setInterval(renderArmor, 184800);
+});
+    
+
+    
+ setInterval(function weaponProgress() {
+    document.getElementById("weaponProgress").value += 5;
+}, 12800)
+
+setInterval(function weaponProgressNeeded() {
+    document.getElementById("weaponProgress").value = 0;
+    weaponLevel += 1;
+    weaponXp = 0;
+    talentpointsOnPrestige += 1;
+}, 268800)
+
+    
+    
+    
+setInterval(function renderWeaponLevel() {
+    document.getElementById("weaponLevel").innerHTML = "Weapon Level:" + " " + Math.round(weaponLevel);
+    // Displays Weapon Level.
+})
+
+var spellPoints = 0;
+
+ setInterval(function renderSpellPoints() {
+    spellPoints += 1;
+}, 184800)
+ 
+ setInterval(function renderSpellThingy() {
+    document.getElementById("spellPoints").innerHTML = "Unused Spell Points: " + Math.round(spellPoints);
+    // Displays Spell Points.
+})
+
+var strengthLevel = 13; // 1064800
+    
+ setInterval(function levelProgress() {
+    document.getElementById("levelProgress").value = 0;
+     level += 1;
+     xpHave = 0;
+     strengthLevel += 4;
+     conLevel += 3;
+     defLevel += 6;
+     dexLevel += 5;
+     intLevel += 3;
+     chaLevel += 8;
+     wisLevel += 4;
+     wilLevel += 2;
+     perLevel += 4;
+     lucLevel += 3;
+     hpLevel += 24;
+     mpLevel += 13;
+}, 8808800)
+ 
+ var actXp = 0;
+var act = 1;
+    
+ setInterval(function actProgress() {
+    document.getElementById("actProgress").value = 0;
+  actXp = 0;
+  act += 1;
+}, 88088000)
+ 
+setInterval(function renderActXp() {
+    document.getElementById("actXp").innerHTML = Math.round(actXp) + " / 100";
+    // Displays Act Xp.
+})
+
+setInterval(function renderAct() {
+    document.getElementById("act").innerHTML = "Act: " + Math.round(act);
+    // Displays Act.
+})
+ 
+var xpHave = 0;
+ 
+setInterval(function levelProgressNeeded() {
+    document.getElementById("levelProgress").value += 1;
+    xpHave += 1;
+    enemyXp = 0;
+    document.getElementById("enemyXp").value = 0;
+}, 8800)
+
+setInterval(function actIncrement() {
+    document.getElementById("actProgress").value += 1;
+    actXp += 1;
+}, 880000)
+
+setInterval(function renderXpHave() {
+    document.getElementById("xpHave").innerHTML = Math.round(xpHave) + " / 1000";
+    // Displays Level Xp.
+})
+
+var questXp = 0;
+
+setInterval(function renderQuestXp() {
+    document.getElementById("questXp").innerHTML = Math.round(questXp) + " / 105";
+    // Displays Quest Xp.
+})
+
+var enemyXp = 0;
+
+setInterval(function renderEnemyXp() {
+    document.getElementById("enemyXp").innerHTML = Math.round(enemyXp) + " / 100";
+    // Displays Enemy Xp.
+})
+
+setInterval(function enemyXpThingy() {
+    document.getElementById("enemyXp").value += 1;
+    enemyXp += 1;
+}, 88)
+
+var weaponXp = 0;
+
+setInterval(function renderWeaponXp() {
+    document.getElementById("weaponXp").innerHTML = Math.round(weaponXp) + " / 110";
+    // Displays Weapon Xp.
+})
+
+ setInterval(function weaponXpThingy() {
+    weaponXp += 1;    
+}, 2560)
+
+var level = 1;
+
+setInterval(function renderLevel() {
+    document.getElementById("level").innerHTML = "Level: " + Math.round(level);
+    // Displays Level.
+})
+ 
+setInterval(function renderStrength() {
+    document.getElementById("strengthLevel").innerHTML = "STR:" + " " + Math.round(strengthLevel);
+    // Displays Strength Level.
+})
+
+var conLevel = 4;    
+ 
+setInterval(function renderCon() {
+    document.getElementById("constitutionLevel").innerHTML = "CON:" + " " + Math.round(conLevel);
+    // Displays Strength Level.
+})
+
+var defLevel = 6;
+    
+setInterval(function renderDef() {
+    document.getElementById("defenseLevel").innerHTML = "DEF:" + " " + Math.round(defLevel);
+    // Displays Defense Level.
+})
+
+var dexLevel = 4;
+
+setInterval(function renderDex() {
+    document.getElementById("dexterityLevel").innerHTML = "DEX:" + " " + Math.round(dexLevel);
+    // Displays Dexterity Level.
+}) 
+
+var intLevel = 7;
+    
+setInterval(function renderInt() {
+    document.getElementById("intelligenceLevel").innerHTML = "INT:" + " " + Math.round(intLevel);
+    // Displays Intelligence Level.
+})
+
+var chaLevel = 5;
+    
+setInterval(function renderCha() {
+    document.getElementById("charismaLevel").innerHTML = "CHA:" + " " + Math.round(chaLevel);
+    // Displays Charisma Level.
+})
+
+var wisLevel = 2;
+    
+setInterval(function renderWis() {
+    document.getElementById("wisdomLevel").innerHTML = "WIS:" + " " + Math.round(defLevel);
+    // Displays Wisdom Level.
+})
+
+var wilLevel = 1;
+    
+setInterval(function renderWil() {
+    document.getElementById("willpowerLevel").innerHTML = "WIL:" + " " + Math.round(wilLevel);
+    // Displays Willpower Level.
+})
+
+var perLevel = 4;
+    
+setInterval(function renderPer() {
+    document.getElementById("perceptionLevel").innerHTML = "PER:" + " " + Math.round(perLevel);
+    // Displays Perception Level.
+})
+
+var lucLevel = 3;
+    
+setInterval(function renderLuc() {
+    document.getElementById("luckLevel").innerHTML = "LUC:" + " " + Math.round(lucLevel);
+    // Displays Luck Level.
+})
+
+var hpLevel = 65;
+    
+setInterval(function renderHP() {
+    document.getElementById("hpLevel").innerHTML = "HP Max:" + " " + Math.round(hpLevel);
+    // Displays HP.
+})
+
+var mpLevel = 34;
+    
+setInterval(function renderMP() {
+    document.getElementById("mpLevel").innerHTML = "MP Max:" + " " + Math.round(mpLevel);
+    // Displays MP.
+})
+
+var attackspeedLevel = 10;
+
+setInterval(function renderAttackSpeed() {
+    document.getElementById("attackspeedLevel").innerHTML = "ATS: " + Math.round(attackspeedLevel) + "%";
+    // Displays Attack Speed.
+})
+    
+    </script>
+    
+<script>
+    
+ setInterval(function armorProgress() {
+    document.getElementById("armorProgress").value += 10;
+}, 16800)
+
+setInterval(function armorProgressNeeded() {
+    document.getElementById("armorProgress").value = 0;
+    armorLevel += 1;
+    armorXp = 0;
+    talentpointsOnPrestige += 1;
+}, 184800)
+
+var armorXp = 0;
+
+setInterval(function armorXpThingy() {
+     armorXp += 1;
+}, 1680)
+
+setInterval(function renderArmorXp() {
+    document.getElementById("armorXp").innerHTML = Math.round(armorXp) + " / 110";
+    // Displays Armor Xp.
+})
+
+document.addEventListener('DOMContentLoaded', e => {
+  function renderArmor() {
+   document.getElementById('currentArmor').textContent = armors[Math.floor(Math.random() * armors.length)];
+  }
+
+  renderArmor();
+  setInterval(renderArmor, 184800);
+});
+    
+setInterval(function renderArmorLevel() {
+    document.getElementById("armorLevel").innerHTML = "Armor Level:" + " " + Math.round(armorLevel);
+    // Displays Armor Level.
+})
+
+const armors = [
+    'Robe',
+    'Fine Robe',
+    'Leather',
+    'Ring Mail',
+    'Invader Leathers',
+    'Warrior Chainmail',
+    'Studded Leather',
+    'Scalemail',
+    'Chainmail',
+    'Banded Mail',
+    'Warrior Platemail',
+    'Platemail',
+    'Necromancer Robe',
+    'Ancient Chainmail',
+    'Skeletal Platemail',
+    'Silver Platemail',
+    'Field Platemail',
+    'Full Platemail',
+
+];
+
+    </script>    
+
+<script>
+    
+var weaponLevel = 0;
+var armorLevel = 1;
+    
+  const weapons = [
+    'Wooden Stick',
+    'Wooden Club',
+    'Dagger',
+    'Short Sword',
+    'Long Sword',
+    'Mace',
+    'Axe',
+    'Battle Axe',
+    'Scythe',
+    'Staff',
+    'Broad Sword',
+    'Scimitar',
+    'Rapier',
+    'Flail',
+    'Sabre',
+    'Katana',
+    'Lance',
+    'War Pike',
+    'Halberd',
+    'Nunchacku',
+    'Hunting Bow',
+    'Gladius',
+    'Morning Star',
+    'Voulge',
+    'Crossbow',
+    'Sharp Rock',
+      
+      ];
+   
+document.addEventListener('DOMContentLoaded', e => {
+  function renderWeapon() {
+    document.getElementById('currentWeapon').textContent = weapons[Math.floor(Math.random() * weapons.length)];
+    weaponLevel += 1;
+  }
+
+  renderWeapon();
+  setInterval(renderWeapon, 268800);
+});
+    
+    
+</script>
+    
+<script>
+
+var questsCompleted = 0;  
+    
+ setInterval(function questProgress() {
+    document.getElementById("questProgress").value += 5;
+}, 8800)
+ 
+ setInterval(function questProgress() {   
+}, 17600)
+ 
+ setInterval(function questXpThingy() {
+     questXp += 1;
+}, 1760)
+
+setInterval(function QuestProgressNeeded() {
+    document.getElementById("questProgress").value = 0;
+    questXp = 0;
+    questsCompleted += 1;
+}, 184800)
+ 
+setInterval(function renderQuestsCompleted() {
+    document.getElementById("questsCompleted").innerHTML = "Quests Completed:" + " " + Math.round(questsCompleted);
+    // Displays Quests Completed.
+})
+
+const quests = ['Fetch me a coin',
+'Seek the Magicle Book',
+'Exterminate the Water Elementals',
+'Deliver this shirt',
+'Fetch me an egg',
+'Seek the Giant Chicken',
+'Deliver this book',
+'Deliver this letter',
+'Exterminate the Rats',
+'Fetch me a rock',
+'Placate the Sand People',
+'Fetch me a pole',
+'Exterminate the Zombies',
+'Seek the Fearsome Tome',
+'Seek the Ancient Tiara',
+'Exterminate the Murloc Scouts',
+'Exterminate the Orc Mages',
+'Deliver this plank',
+'Deliver this artifact',
+'Fetch me a pearl',
+'Exterminate the Ghouls',
+'Placate the Air Elementals',
+'Exterminate the Minotaurs',
+'Deliver this potion',
+'Fetch me a mushroom',
+'Seek the Jungle Temple',
+'Seek the Unstable Portal',
+'Exterminate the Crocolisks',
+'Placate the Ghosts',
+'Fetch me a twig',
+'Deliver this barrel',
+'Seek the Forgotten Cave',
+'Exterminate the Fire Elementals',
+'Exterminate the Skeleton Warriors',
+'Fetch me a trinket',
+'Deliver this Leather Jacket',
+'Deliver this Chicken',
+'Exterminate the Goblins',
+'Fetch me some bread',
+'Exterminate the Bandits',
+'Deliver this ladder',
+'Fetch me a letter',
+'Deliver this coin',
+'Placate the Mummies',
+'Exterminate the Evil Mountain Goats',
+                          
+               ];
+
+document.addEventListener('DOMContentLoaded', e => {
+  function renderQuest() {
+    document.getElementById('currentQuest').textContent = quests[Math.floor(Math.random() * quests.length)];
+  }
+
+  renderQuest();
+  setInterval(renderQuest, 184800);
+});
+    
+</script>
+    
+
+<script>
+ 
+var gold = 0;
+var stage = 1;
+var talentpoints = 0;
+var talentpointsOnPrestige = 0;
+
+setInterval(function progress() {
+    document.getElementById("progress").value += 10;
+}, 800)
+
+setInterval(function progressNeeded() {
+    document.getElementById("progress").value = 0;
+    goldFromInventory += 1;
+    stage += 1;
+}, 8800)
+
+setInterval(function renderGold() {
+    document.getElementById("gold").innerHTML = "Gold:" + " " + Math.round(gold);
+    // Displays Gold.
+    document.getElementById("stage").innerHTML = "Stage: " + Math.round(stage); // Displays Stage.
+    document.getElementById("talentpointsOnPrestige").innerHTML = "Talent Points On Prestige: " + Math.round(talentpointsOnPrestige); // Displays Talent Points On Prestige.
+    document.getElementById("talentpoints").innerHTML = "Unused Talent Points: " + Math.round(talentpoints); // Displays Talent Points.
+})  
+
+function prestige() {
+    if(talentpointsOnPrestige >= 1){
+        stage = 1;
+        talentpoints += talentpointsOnPrestige;
+        talentpointsOnPrestige = 0;
+    }
+    else{
+    }
+}
+
+const enemies = ['Executing a Wolf...',
+'Executing a Ghost...',
+'Executing a Zombie...', 
+'Executing a Skeleton...', 
+'Executing a Spider...', 
+'Executing a Undead...', 
+'Executing a Giant Rat...', 
+'Executing a Bat...', 
+'Executing a Reptilian Humanoid...', 
+'Executing a Skeleton Warrior...', 
+'Executing a Ghoul...',
+'Executing a Vampire...',
+'Executing an Orc...',
+'Executing a Bear...',
+'Executing a Cyclops...',
+'Executing a Witch...',
+'Executing a Wizard...',
+'Executing a Warlock...',
+'Executing a Spellcaster...',
+'Executing a Demon...',
+'Executing a Mummy...',
+'Executing an Ogre...',
+'Executing a Minotaur...',
+'Executing a Werewolf...',
+'Executing a Gnoll...',
+'Executing a Elemental...',
+'Executing an Ant...',
+'Executing a Chimera...',
+'Executing a Beholder...',
+'Executing a Snake...',
+'Executing a Bandit...',
+'Executing a Scorpion...',
+'Executing a Lich...',
+'Executing a Hydra...',
+'Executing a Basilisks...',
+'Executing a Evil Monk...',
+'Executing a Necromancer...',
+'Executing a Turtle...',
+'Executing a Ninja...',
+'Executing a Centipede...',
+'Executing a Lion...',
+'Executing a Crab...',
+'Executing a Giant Crab...',
+'Executing a Gremlin...',
+'Executing a Hellhound...',
+'Executing a Cockatrice...',
+'Executing a Roc...',
+'Executing a Berserker...',
+'Executing a Barghest...',
+'Executing a Arachnoid...',
+'Executing a Ifrit...',
+'Executing a Satyr...',
+'Executing a Wyvern...',
+'Executing a Beastmen...',
+'Executing a Phoenix...',
+'Executing a Evil Unicorn...',
+'Executing a Genie...',
+'Executing a Werehog...',
+'Executing a Worgen...',
+'Executing a Slime Monster...',
+'Executing a Boar...',
+'Executing a Tonberry...',
+'Executing a Pikaman...',
+'Executing a Cactuar...',
+'Executing an Evil Pickle...',
+'Executing a Owlbear...',
+'Executing a Gorgon...',
+'Executing a Sea Monster...',
+'Executing a Manticore...',
+'Executing a Goritaur...',
+'Executing a Arctle...',
+'Executing a Murloc...',
+'Executing a Vydral...',
+'Executing a Blitz...',
+'Executing a Animus...'];
+document.addEventListener('DOMContentLoaded', e => {
+  function renderEnemy() {
+    document.getElementById('words').textContent = enemies[Math.floor(Math.random() * enemies.length)];
+    gold += 3;
+    gold += goldPS;
+  }
+
+  renderEnemy();
+  setInterval(renderEnemy, 8800);
+});
+    
+</script>    
+
+   
+</script>  
+</body>    
+
+>>>>>>> 118873022f470f3cecbda876e1d28c7282266cf0
+</html>
