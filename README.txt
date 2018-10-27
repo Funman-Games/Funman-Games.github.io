@@ -80,4 +80,9 @@ Every time a monster is killed a random item will drop. You can sell items for g
 
 =======================================
 
-Please note that LoadingQuester only saves your current value and not current progress. What this means is if you are level 2 and your level progress bar is 460/1000 and you close your browser and then open it again and load your game. It only saves that you are in level 2 and not the 460 progress bar. This applies to all progress bars.
+Please note that LoadingQuester only saves your current value and not current progress. 
+What this means is if you are level 2 and your level progress bar is 460/1000 and you close your browser
+and then open it again and load your game. It only saves that you are in level 2 and not the 460 progress bar.
+This applies to all progress bars.
+
+=======================================
