@@ -499,7 +499,52 @@ $(document).ready(function(){
     
 </head>
     
-<body>    
+<body>
+	
+<script language="Javascript">
+	function example_change_cursor() {
+		document.body.style.cursor = document.getElementById('example-cursor').options[document.getElementById('example-cursor').selectedIndex].value;
+        
+        
+	}
+	function example_restore_cursor() {
+		document.body.style.cursor = 'default';
+        
+	}
+</script>
+<div style="z-index: 10; position: absolute; right:350; top:125;">
+<select id="example-cursor" onchange="cursor()">
+	<option>default</option>
+	<option>crosshair</option>
+	<option>grab</option>
+    <option>grabbing</option>
+	<option>help</option>
+	<option>move</option>
+	<option>n-resize</option>
+	<option>ne-resize</option>
+	<option>nw-resize</option>
+	<option>pointer</option>
+	<option>progress</option>
+	<option>s-resize</option>
+	<option>se-resize</option>
+	<option>sw-resize</option>
+	<option>text</option>
+	<option>w-resize</option>
+	<option>wait</option>
+    <option>col-resize</option>
+    <option>cell</option>
+    <option>alias</option>
+    <option>copy</option>
+    <option>no-drop</option>
+    <option>row-resize</option>
+    <option>zoom-in</option>
+    <option>zoom-out</option>
+    
+    
+</select>    
+<input type="button" onclick="example_change_cursor()" value="Change Cursor" />
+<input type="button" onclick="example_restore_cursor()" value="Restore Default" />
+    </div>
     
 <div style="z-index: 10; position: absolute; right:775; top:148; font-size: 50px; color:black;">
 <progress id="progress" value="1" max="100">
