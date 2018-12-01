@@ -1,12 +1,113 @@
 <!DOCTYPE>
 <html>
+<div id="bee"> 
+  <img src="https://www.cursor.cc/cursor3d/217.png" style="width:50px;height:50px;"/>
+</div>
+    
+<script>
+    
+     var bee = document.getElementById("bee");
+		document.addEventListener("mousemove", getMouse); 
 
-	
+
+		bee.style.position = "absolute"; //css		
+		var beepos = {x:0, y:0};
+
+		setInterval(followMouse, 50);
+		
+		var mouse = {x:0, y:0}; //mouse.x, mouse.y
+		
+		var dir = "right";
+		function getMouse(e){
+			mouse.x = e.pageX;
+			mouse.y = e.pageY;
+        //Checking directional change
+        if(mouse.x > beepos.x){
+          dir = "right";
+        } else {
+          dir = "left";
+        }
+		}
+		
+		function followMouse(){
+			//1. find distance X , distance Y
+			var distX = mouse.x - beepos.x;
+			var distY = mouse.y - beepos.y;
+			//Easing motion
+       //Progressive reduction of distance 
+			beepos.x += distX/5;
+			beepos.y += distY/2;
+			
+			bee.style.left = beepos.x + "px";
+			bee.style.top = beepos.y + "px";
+      
+      
+        //Apply css class 
+        if (dir == "right"){
+          bee.setAttribute("class", "right");
+        } else {
+          bee.setAttribute("class", "left");        
+        }
+			
+		}
+
+    </script>
+    <div style="font-size:300px; z-index: 9; position: absolute; right:20; top:20;">
+        <p>🎄</p>
+    </div>
+    
+     <div style="font-size:100px; z-index: 9; position: absolute; right:400; top:10;">
+        <p>🎅</p>
+    </div>
+    
+         <div style="font-size:100px; z-index: 9; position: absolute; right:525; top:10;">
+        <p>🤶</p>
+    </div>
+    
+             <div style="font-size:100px; z-index: 9; position: absolute; right:75; top:600;">
+        <p>🎁</p>
+    </div>
+    
+                 <div style="font-size:100px; z-index: 9; position: absolute; right:225; top:625;">
+        <p>🎁</p>
+    </div>
+    
+               <div style="font-size:100px; z-index: 9; position: absolute; right:200; top:115;">
+        <p>🦃</p>
+    </div>
+    
+                   <div style="font-size:50px; z-index: 9; position: absolute; right:75; top:175;">
+        <p>🌰</p>
+    </div>
+    
+                       <div style="font-size:175px; z-index: 9; position: absolute; right:325; top:425;">
+        <p>⛄</p>
+    </div>
+    
+                       <div style="font-size:175px; z-index: 9; position: absolute; right:325; top:210;">
+        <p>🦌</p>
+    </div>
+    
+                           <div style="font-size:125px; z-index: 8; position: absolute; right:250; top:175;">
+        <p>🛷</p>
+    </div>
+    
+                           <div style="font-size:125px; z-index: 8; position: absolute; right:425; top:100;">
+        <p>❄</p>
+    </div>
+    
+                           <div style="font-size:75px; z-index: 8; position: absolute; right:75; top:-30;">
+        <p>🔔</p>
+    </div>
+    
+                           <div style="font-size:50px; z-index: 8; position: absolute; right:75; top:825;">
+        <p>Merry Christmas!</p>
+    </div>	
 	
 <script>
 	
 	var trailLength = 1 // The length of trail
-var path = ""
+var path = "https://78.media.tumblr.com/ab2e55973a4bea217d0ab2bb26127dbe/tumblr_my8swxQ8EO1r9b2pfo1_250.gif"
 // URL of your image
 
 var standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body //create reference to common "body" across doctypes
